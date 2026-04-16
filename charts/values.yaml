@@ -1,0 +1,29 @@
+hosts:
+  frontend: &frontend_host "FRONTEND_URL"
+
+replicaCount: 2
+
+image:
+  repository: "PLACEHOLDER"
+  pullPolicy: Always
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  # service port
+  port: &service_port 80
+  # container port
+  targetPort: 8080
+
+ingress:
+  hosts:
+    - host: *frontend_host
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: chaoffice-working-title
+                port:
+                  number: *service_port

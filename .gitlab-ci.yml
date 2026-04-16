@@ -1,0 +1,15 @@
+stages:
+  - test
+  - build
+  - package
+  - deploy
+
+test-build:
+  image: barichello/godot-ci:4.6.1
+  stage: test
+  script:
+  - mkdir dist
+  - godot --headless --export-release "Web"
+
+include:
+  - local: 'charts/ci-build-deploy.yml'
