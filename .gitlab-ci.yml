@@ -10,6 +10,9 @@ test-build:
   script:
   - mkdir dist
   - godot --headless --export-release "Web"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
 include:
   - local: 'charts/ci-build-deploy.yml'
