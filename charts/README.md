@@ -1,3 +1,3 @@
-# GameJam SoSe26 Helm Chart
+# Chaoffice Working Title Helm Chart
 
-This chart deploys the `GameJam SoSe26` game to the HTWK-FSRIM Kubernetes cluster
+This chart deploys the `Chaoffice Working Title` game to the HTWK-FSRIM Kubernetes cluster
