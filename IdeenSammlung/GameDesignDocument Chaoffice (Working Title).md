@@ -2,27 +2,74 @@
 
 ![[Pasted image 20260415104736.png]]
 
-## Klappentext
+# Klappentext
 
-Erster Tag im neuen Job, du bist mega nervös...
-Wie sind die Kollegen?
-Wie ist der Chef?
-Bist du zu Over/ Underdressed?
+Der erste Tag im neuen Job, du bist maximal nervös...
+Wie sind die Kollegen, wie ist der Chef?
+Bist du zu over- oder underdressed?
 Wirst du dich schnell zurecht finden?
 
-all das und mehr Gedanken gehen dir durch den Kopf bist du das Büro dann entlich betrits und dir nur denkst.... "What?!"
+all das und mehr geht dir durch den Kopf bist du das Büro dann entlich betrittst und dir nur denkst.... "?!"
 
-## Grundlegendes
+# Grundlegendes
 
  Ziel: Ein Spiel zu entwickeln, welches auf humoristische Art und Weise einem die Grundkonzepte von agilen Softwareentwicklungsprozessen näherbringt. Dies beinhaltet u.a. Sachen wie UML, Git, einfache Algorithmen, wie man Meetings strukturiert, SCRUM. Lerne anhand des Spiels die spezifischen Prozesse und warum diese eingesetzt werden und warum sie notwendig sind. Zeigen anhand von Beispielen warum es funktioniert, Vorher Nachher Geschichte. 
 Motivation dahinter: Wir kennen schlechte Prozesse und wir wollen es besser machen und es spielerisch weitergeben 
 
+## Zielgruppe
+
+aktuelle Überlegung ist (durch Refactoring-Aufgabe angestoßen) Semester 3-4 eines durchschnitts-Informatikstudenten an der HTWK Leipzig
+
 ### Grundriss
 
-### Charakter
+# Charaktere
+### Main Charakter
+
 Hauptcharakter: Nondeskriptiv, geschlechtsneutral (für späteres ändern), MC weiß es einfach besser und ändert deswegen alles ab
 Arbeiten wir uns hoch von Praktikantenstelle aus oder sind wir spezifisch dafür da das wir dieses Office umstrukturieren?
  --> Aufgrund chaotischen OnBoardingprozess möglichkeit des "so tun als ob" wenn es darum geht Strukturen zu ändern dadurch das der Praktikant anfängt alle Strukturen umzuwerfen 
+
+### Andere Charaktere
+##### Teams / NPCs im Spiel
+- zwei Teams
+	- Frontend
+		- 2 Personen 
+			- `Marius`
+			- Steffi
+	- Backend - größer als Frontendteam
+		- 5 Personen
+			- Fernando
+			- `Meff`
+			- Janosch
+			- Annegret
+			- Cornelia
+	- (Dev) Ops (Lemmy)
+		- schläft im Serverraum
+- Hausmeister (Glen Mathews)
+- Sekretär (Man Greasley)
+- `Chef` (Mike Gefängnis)
+- Hauptcharakter
+
+### Charaktereigenschaften
+
+- **Chef**: Schreibt immer an alle, nicht an einzelne, liest nie die emails an ihn
+- **Hausmeister**: Antwortet immer dem Chef (mit CC an alle)
+- **Cornellia, Steffi** reden immer miteinander
+- **Man** mit ihm redet niemand, obwohl er alles weiß
+- **Annegret** redet mit niemanden, will nur ihr eigenes Ding machen
+
+### Beziehungen zwischen Charakteren
+
+![beziehungen](../assets/protokoll/IMG_4277.jpeg)
+
+Legende
+- Kreis: sitzen zusammen
+- Kreuz auf einfacher Linie: gescheiterte Kommunikation
+- Doppel-Pfeil: geht an alle
+
+Hintergedanke: Man will aus dem rechten ist-Zustand zum linken soll-Zustand kommen
+-> soll der Spieler herausfinden
+
 
 ### Levelaufbau
 
@@ -75,7 +122,7 @@ Jeder sitzt am falschen Platz, nichts ist sortiert, dadurch die Kommunikationswe
 
 Dinge passieren nicht über einen Tag verteilt sondern über mehrere, Tagwechsel führt zu Office sauberer falls Rätsel vorher gelöst wurden
 
-## Quests 
+# Quests 
 ! Anne Anmerk.: So schön das alles ist und so gern ich das alles drin haben will, sollten wir diese Sachen vllt wirklich hinten anstellen und uns auf den Learning Bereich des Spiels fokussieren. Also wirklich erstmal an den Rätseln arbeiten und "das Herz" aufbauen und dann all den Fluff drumrumbasteln mit Kaffeemaschine, Geschirrspülmaschine, Chef bei Laune halten
 
 
@@ -98,14 +145,96 @@ SCRUM mit zuerst vllt weil damit man merkt wer was wo machen muss, Leute reden n
 
 ### Spagetthicode fixen / Refaktorie
 
+Idee: NPCs machen ihr Ding, dadurch entstehen Aufgaben für den Spieler
+1. Einführung
+	- neues Layout wird entdeckt
+	- 1 NPS leitet ein
+	  "Schau mal mein toller Code"
+		- 2-3 NPCs verweisen auf 'main' NPC
+
+2. Eigentliche Aufgabe
+	- Misual-Mudio Code-Umgebung (angelehnt an VSC)
+		- bspw. für Refactoring-Aufgabe: ganz viele else if anweisungen
+
+```ts
+if (n==1) return false;
+else if (n==2) return true;
+else if (n==3) return false;
+...
+```
+- Ideen
+	- Fragen fliegen ganz schnell auf einen zu, man muss entscheiden ob man sich dafür oder dagegen entscheidet
+	- Man refactored Code mit Drag and Drop Prinzip
+	- man markiert Zeilen Code in einem Programm, bei denen man denkt dass es "falscher" Code ist. Gedankenwolke zum überprüfen
+- ```Grundidee, dass man Konzepte abstrakt vermittelt```
+	- d.h. Lesbarkeit, Übersichtlichkeit, Redundanzen,... (was auf Refactoring zutrifft) über Beispiele vermitteln
+3. Smalltalk nach abgeschlossener Aufgabe, nach hause gehen (Ende vom Tag)
+	- man gibt sich als Chef aus und schreibt Mails wie "so machen wir das jetzt"
+
+
 ### Irgendwann feststellen das du gar nicht weißt was die Firma eigentlich macht und das Rausfinden
 
+# Erstellung der Tagesabläufe
 
+| Tag | Task                            | Anmerkungen                                          |
+| --- | ------------------------------- | ---------------------------------------------------- |
+| 0   | Laptop finden                   | Kennenlernen <- Sammeln von Informationen über Firma |
+| 1   | Einführung sinnvoller Struktur  |                                                      |
+| 2   | UML                             |                                                      |
+| 3   | Refactoring                     |                                                      |
+| 4   | 🎉 Beförderung / Festanstellung | `Das Büro räumt sich über die Tage hinweg auf`       |
+
+- Technische Klärung wie man Tage in GoDot umsetzen kann 
+	- über globale Variable anhand der sich die Notes anpassen
+	- (if tag == 0 do xy else z)
+- NPCs, Personen die man sieht, Raum etc. sind abhängig vom aktuellen Tag
+
+# Konkreter Tagesablauf/Spielablauf
+
+##### ==Tag 0== (Montag) -> ankommtag (Laptop)
+
+Dialog (Blackscreen Chatbox unten)
+- Firma xy ist die bestbewertetste Firma im Landkreis ...
+	- Firma hat Preise gewonnen etc.
+- Man kommt in die Firma
+	- Rezeption begrüßt den Spieler freudenstrahlend
+
+Handlung
+- man erhält Chip & Zugangsdaten für Büro
+	- Idee: man erhält auf einem Blatt Papier die Email und Passwort für die eigenen Account-Zugangsdaten - der Plot: man ist dann auf einmal als Chef eingeloggt, da er aus versehen seine Credentials aufgeschrieben hat
+- Laufliste (was man alles an Material hat), Dokument das Onboarding-Prozess begleitet
+- Aufgabe: Rede mit Chef (keine Info wo/wer das ist)
+	- mit NPCs reden
+	- Welt erkunden (Räume die vorerst irrelevant sind werden ausgegraut)
+	- Infos sammeln
+- Erste ```Quest```: Laptop finden
+
+Items zum anfassen
+- Laufzettel (Buch / Ordner in dem ein Zettel raus steht)
+	- dort stehen To-Dos etc., auf der anderen Seite Spinnennetz
+
+```In a Nutshell```
+- Man bekommt ein Laufblatt
+- da steht geh zum Chef
+- Chef weiß nichts davon
+- Chef sucht irgendwelche Dokumente
+	- Blatt auf dem steht neuer Mitarbeiter etc. den man bekommt
+- man erhält seinen Laptop
+
+##### ==Tag 1== (Dienstag) -> Spinnennetz
+
+- Aufgabe: Spinnennetz auflösen, wer mit wem interagiert, wo Schwierigkeiten sind, welche aufgaben von wem übernommen werden
+
+##### ==Tag 2== (Mittwoch) -> UML
+
+##### ==Tag 3== (Donnerstag) -> Refactoring
+
+##### ==Tag 4== (Freitag) -> Ende yay
 
 
 ___
 ### Todo
-- ReadMe für wie man Dinge pushed
+
 - GameDesign Dokument
 - KickOffVortrag
 -> Aktueller Zustand Projekt, Welche Ziele, ggf individuelle Ziele von allen, Zeitplan, Wie Zeitplan???, Problemquellen, was tun wir?,  Wo Vorlesung integriert

@@ -5,4 +5,4 @@
 [node name="Main" type="Node" unique_id=1386797924]
 
 [node name="Node2D" parent="." unique_id=1867850265 instance=ExtResource("1_o5qli")]
-position = Vector2(506, 623)
+position = Vector2(475, 687)
