@@ -1,0 +1,20 @@
+[gd_resource type="TileSet" format=3 uid="uid://cyyp075yrukgp"]
+
+[ext_resource type="Texture2D" uid="uid://dl6b5r565q335" path="res://assets/godot/textures.png" id="1_fmcwv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e1vvs"]
+texture = ExtResource("1_fmcwv")
+texture_region_size = Vector2i(32, 32)
+0:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+2:6/0 = 0
+2:4/0 = 0
+1:4/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_e1vvs")
