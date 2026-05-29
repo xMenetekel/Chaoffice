@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdgfepjeafdr1"
-path="res://.godot/imported/A2_Modern_Rasak.png-b49bf9bffd77810d436aa4e03898b30f.ctex"
+uid="uid://cmniy6r1axa6y"
+path="res://.godot/imported/gridlock.png-3f87a97dfcaaa2ab612cece446e11f95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/Modern/A2_Modern_Rasak.png"
-dest_files=["res://.godot/imported/A2_Modern_Rasak.png-b49bf9bffd77810d436aa4e03898b30f.ctex"]
+source_file="res://assets/godot/gridlock.png"
+dest_files=["res://.godot/imported/gridlock.png-3f87a97dfcaaa2ab612cece446e11f95.ctex"]
 
 [params]
 

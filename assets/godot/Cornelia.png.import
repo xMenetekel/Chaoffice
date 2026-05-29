@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0mmnru3lh07q"
-path="res://.godot/imported/Tileset_Modern KitchenToilett_Rasak.png-e78e9a1ed13e0e87f12d5fb86fcb087e.ctex"
+uid="uid://hxyqi3wa62kw"
+path="res://.godot/imported/Cornelia.png-b153c8c990adcc65e1d61276e7ba55e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/Modern/Tileset_Modern KitchenToilett_Rasak.png"
-dest_files=["res://.godot/imported/Tileset_Modern KitchenToilett_Rasak.png-e78e9a1ed13e0e87f12d5fb86fcb087e.ctex"]
+source_file="res://assets/godot/Cornelia.png"
+dest_files=["res://.godot/imported/Cornelia.png-b153c8c990adcc65e1d61276e7ba55e2.ctex"]
 
 [params]
 

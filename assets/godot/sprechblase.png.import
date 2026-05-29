@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byxvpc83db5ei"
-path="res://.godot/imported/Tileset_Modern_City_Rasak.png-9b2a44640bb013bdee8a49478f5460df.ctex"
+uid="uid://ds08bb8wyyya7"
+path="res://.godot/imported/sprechblase.png-472010eb58862dc0fe3be399c60c1800.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/Modern/Tileset_Modern_City_Rasak.png"
-dest_files=["res://.godot/imported/Tileset_Modern_City_Rasak.png-9b2a44640bb013bdee8a49478f5460df.ctex"]
+source_file="res://assets/godot/sprechblase.png"
+dest_files=["res://.godot/imported/sprechblase.png-472010eb58862dc0fe3be399c60c1800.ctex"]
 
 [params]
 
