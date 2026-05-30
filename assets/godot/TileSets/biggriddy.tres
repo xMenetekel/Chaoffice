@@ -24,7 +24,9 @@ texture_region_size = Vector2i(32, 32)
 2:4/0 = 0
 2:5/0 = 0
 3:3/0 = 0
+3:3/0/terrain_set = 0
 3:4/0 = 0
+3:4/0/terrain_set = 0
 3:5/0 = 0
 4:3/0 = 0
 4:4/0 = 0
@@ -58,4 +60,7 @@ texture_region_size = Vector2i(32, 32)
 
 [resource]
 tile_size = Vector2i(32, 32)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.7282747, 0, 0.15228602, 1)
 sources/0 = SubResource("TileSetAtlasSource_1r4sl")
