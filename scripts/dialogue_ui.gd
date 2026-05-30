@@ -1,3 +1,4 @@
+class_name DialogueUI
 extends CanvasLayer
 
 @onready var panel: NinePatchRect = $Panel
@@ -12,6 +13,7 @@ var _tween: Tween
 var _is_fast: bool = false
 
 func _ready() -> void:
+	DialogueManager.init(self)
 	visible = false
 
 func show_line(npc_name: String, text: String) -> void:

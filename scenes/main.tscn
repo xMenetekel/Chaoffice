@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://b4eljfgdtm0d" path="res://scenes/npcs/Fernando.tscn" id="4_jyhfs"]
 
-[node name="Main" type="Node" unique_id=1386797924]
+[node name="Main" type="Node" unique_id=2117982322]
 
 [node name="Node2D" parent="." unique_id=1867850265 instance=ExtResource("1_o5qli")]
 position = Vector2(452, 622)
@@ -14,8 +14,10 @@ position = Vector2(452, 622)
 
 [node name="DialogueUI" parent="." unique_id=1934225950 instance=ExtResource("2_0wfyh")]
 
-[node name="CharacterBody2D2" parent="." unique_id=930304160 instance=ExtResource("3_sugp2")]
-position = Vector2(583, 335)
+[node name="Fernando" parent="." unique_id=1139556431 instance=ExtResource("4_jyhfs")]
+position = Vector2(642, 344)
+npc_id = "fernando"
+npc_name = "Fernando"
 
-[node name="CharacterBody2D3" parent="." unique_id=1139556431 instance=ExtResource("4_jyhfs")]
-position = Vector2(639, 341)
+[node name="Player" parent="." unique_id=1220295638 instance=ExtResource("3_sugp2")]
+position = Vector2(556, 337)

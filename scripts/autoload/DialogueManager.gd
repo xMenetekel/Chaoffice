@@ -3,19 +3,16 @@ extends Node
 signal dialogue_started(npc_id: String)
 signal dialogue_finished(npc_id: String)
 
-var _current_lines: Array[String] = []
+var _current_lines: Array = []
 var _current_index: int = 0
 var _pending_effects: Dictionary = {}
 var _active_npc: String = ""
 var _active_npc_name: String = ""
 var _is_active: bool = false
-var _ui: CanvasLayer
+var _ui: DialogueUI
 
-func _ready() -> void:
-	await get_tree().process_frame
-	_ui = get_tree().get_first_node_in_group("dialogue_ui")
-	if _ui == null:
-		push_warning("DialogueManager: kein Node in Gruppe 'dialogue_ui' gefunden")
+func init(ui: DialogueUI) -> void:
+	_ui = ui
 
 func start_dialogue(npc_id: String, npc_name: String, branches: Array) -> void:
 	if _is_active:

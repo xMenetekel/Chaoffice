@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b4eljfgdtm0d"]
 
 [ext_resource type="PackedScene" uid="uid://cqkrk4apjwft3" path="res://scenes/npcs/base_npc.tscn" id="1_m0aaq"]
+[ext_resource type="Script" uid="uid://0w4pwrg5u02l" path="res://scenes/npcs/base_npc.gd" id="2_408yk"]
 [ext_resource type="Texture2D" uid="uid://dk8ye3lllcw0l" path="res://assets/godot/walkingHumans/mensch1.png" id="2_bnifb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_408yk"]
@@ -28,11 +29,15 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="CharacterBody2D" unique_id=1139556431 instance=ExtResource("1_m0aaq")]
+[node name="Fernando" unique_id=1139556431 instance=ExtResource("1_m0aaq")]
+script = ExtResource("2_408yk")
 
 [node name="CollisionShape2D" parent="." index="0" unique_id=661832740]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_408yk")
+
+[node name="CollisionShape2D" parent="Area2D" parent_id_path=PackedInt32Array(1842933805) index="0" unique_id=1862917947]
+disabled = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="2" unique_id=2111446462]
 position = Vector2(4, -7)

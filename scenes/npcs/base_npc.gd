@@ -1,5 +1,5 @@
 class_name BaseNPC
-extends Area2D
+extends CharacterBody2D 
 
 @export var npc_id: String = ""
 @export var npc_name: String = ""
@@ -8,8 +8,8 @@ var dialogue_data: Array = []
 var player_nearby: bool = false
 
 func _ready() -> void:
-	body_entered.connect(_on_body_entered)
-	body_exited.connect(_on_body_exited)
+	$Area2D.body_entered.connect(_on_body_entered)
+	$Area2D.body_exited.connect(_on_body_exited)
 	GameState.day_changed.connect(_on_day_changed)
 	_load_dialogue()
 
@@ -29,7 +29,8 @@ func _load_dialogue() -> void:
 
 func _input(event: InputEvent) -> void:
 	if player_nearby and event.is_action_pressed("interact"):
-		_on_interact()
+		if player_nearby:
+			_on_interact()
 
 func _on_interact() -> void:
 	if dialogue_data.is_empty():
