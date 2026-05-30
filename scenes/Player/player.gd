@@ -10,6 +10,12 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
+	move_player()
+	
+	move_and_slide()
+
+
+func move_player():
 	var move_vector: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
 	velocity = move_vector * move_speed
@@ -26,4 +32,3 @@ func _process(delta: float) -> void:
 		$AnimatedSprite2D.stop()
 		
 		
-	move_and_slide()
