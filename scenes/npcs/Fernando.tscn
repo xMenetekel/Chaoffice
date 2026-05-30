@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://b4eljfgdtm0d"]
+
+[ext_resource type="PackedScene" uid="uid://cqkrk4apjwft3" path="res://scenes/npcs/base_npc.tscn" id="1_m0aaq"]
+[ext_resource type="Texture2D" uid="uid://dk8ye3lllcw0l" path="res://assets/godot/walkingHumans/mensch1.png" id="2_bnifb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_408yk"]
+size = Vector2(20, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdin7"]
+atlas = ExtResource("2_bnifb")
+region = Rect2(0, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggkuc"]
+atlas = ExtResource("2_bnifb")
+region = Rect2(256, 0, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5a5sv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdin7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ggkuc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="CharacterBody2D" unique_id=1139556431 instance=ExtResource("1_m0aaq")]
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=661832740]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_408yk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="2" unique_id=2111446462]
+position = Vector2(4, -7)
+sprite_frames = SubResource("SpriteFrames_5a5sv")
