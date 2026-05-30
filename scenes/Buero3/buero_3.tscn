@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cljxqpua3orif"]
+
+[node name="Node2D_Buero3" type="Node2D" unique_id=1955925978]
+
+[node name="Fussboden" type="TileMapLayer" parent="." unique_id=1997430414]
+
+[node name="Waende" type="TileMapLayer" parent="." unique_id=758273099]
+
+[node name="GroßeObjektekleinAdjustie" type="TileMapLayer" parent="." unique_id=1148307702]
+
+[node name="DetailsHinterTischen" type="TileMapLayer" parent="." unique_id=1154008545]
+
+[node name="Tische" type="TileMapLayer" parent="." unique_id=354088886]
+
+[node name="DetailsAndereGroesse_0" type="TileMapLayer" parent="." unique_id=461534837]
+
+[node name="DetailsAndereGroesse_1" type="TileMapLayer" parent="." unique_id=580253631]
+
+[node name="LayerDetails_0" type="TileMapLayer" parent="." unique_id=1712268095]
+
+[node name="Tag1_0" type="TileMapLayer" parent="." unique_id=589358695]
+
+[node name="Tag1_1" type="TileMapLayer" parent="." unique_id=179677399]
