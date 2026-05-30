@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cqkrk4apjwft3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qnc6"]
+size = Vector2(34, 52)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_65blf"]
+radius = 41.0
+
+[node name="base_npc" type="CharacterBody2D" unique_id=1139556431]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1932248329]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_6qnc6")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1842933805]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1862917947]
+shape = SubResource("CircleShape2D_65blf")
+disabled = true

@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cqq40uj6jkue6"]
+
+[ext_resource type="Texture2D" uid="uid://ds08bb8wyyya7" path="res://assets/godot/sprechblase.png" id="1_0qyo7"]
+[ext_resource type="Script" uid="uid://5scn3n0daaja" path="res://scripts/dialogue_ui.gd" id="1_7d2kc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0qyo7"]
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[node name="DialogueUI" type="CanvasLayer" unique_id=1934225950]
+script = ExtResource("1_7d2kc")
+
+[node name="Panel" type="NinePatchRect" parent="." unique_id=1810498308]
+custom_minimum_size = Vector2(96, 254)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -254.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_0qyo7")
+
+[node name="Control" type="Control" parent="Panel" unique_id=345447736]
+anchors_preset = 0
+offset_left = 49.0
+offset_top = 15.0
+offset_right = 1147.0
+offset_bottom = 258.0
+
+[node name="NPCName" type="Label" parent="Panel/Control" unique_id=1581703963]
+layout_mode = 0
+offset_right = 203.0
+offset_bottom = 20.0
+label_settings = SubResource("LabelSettings_0qyo7")
+vertical_alignment = 1
+uppercase = true
+
+[node name="DialogueText" type="RichTextLabel" parent="Panel/Control" unique_id=556490139]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 1088.0
+offset_bottom = 183.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 12
+theme_override_font_sizes/normal_font_size = 23
+fit_content = true
+scroll_active = false
+text_direction = 1
+
+[node name="AdvanceHint" type="Label" parent="Panel/Control" unique_id=724469287]
+layout_mode = 0
+offset_left = 951.0
+offset_top = 199.0
+offset_right = 1062.0
+offset_bottom = 219.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "[Space] Weiter"
