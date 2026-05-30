@@ -15,9 +15,18 @@ run/main_scene="uid://cbteslkcsjknp"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameState="*uid://c0wiixblakc40"
+DialogueManager="*uid://2icjrp3tebon"
+
 [dotnet]
 
 project/assembly_name="Godot Chaoffice Working Title"
+
+[gui]
+
+theme/custom_font="uid://c4xss1ls2pdjn"
 
 [physics]
 
