@@ -32,3 +32,4 @@ func move_player():
 		$AnimatedSprite2D.stop()
 		
 		
+	move_and_slide()
