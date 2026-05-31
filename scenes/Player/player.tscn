@@ -151,8 +151,9 @@ animations = [{
 "speed": 4.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x8khf"]
-size = Vector2(34, 52)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gqjuk"]
+radius = 4.0
+height = 20.0
 
 [node name="Player" type="CharacterBody2D" unique_id=587769380]
 motion_mode = 1
@@ -163,8 +164,9 @@ move_speed = 200.0
 sprite_frames = SubResource("SpriteFrames_hvfru")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1449356237]
-position = Vector2(0, 3)
-shape = SubResource("RectangleShape2D_x8khf")
+position = Vector2(0, 25)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_gqjuk")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=10272845]
 zoom = Vector2(4, 4)

@@ -4,19 +4,53 @@
 [ext_resource type="PackedScene" uid="uid://cqq40uj6jkue6" path="res://scenes/DialogueUI.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://b4eljfgdtm0d" path="res://scenes/npcs/Fernando.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://dicxt6vsib6c" path="res://scenes/npcs/Marius.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://ba4khlvnlncxg" path="res://scenes/npcs/Steffi.tscn" id="6_tefeu"]
+[ext_resource type="PackedScene" uid="uid://nyrnm2ni6iry" path="res://scenes/npcs/Meff.tscn" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://bx3ndx71r2qdp" path="res://scenes/npcs/Cornelia.tscn" id="8_tipki"]
+[ext_resource type="PackedScene" uid="uid://dvsckbry7o2iu" path="res://scenes/npcs/Annegret.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://43532c2mn0lx" path="res://scenes/npcs/Lemmy.tscn" id="10_choun"]
+[ext_resource type="PackedScene" uid="uid://btjp43mlhg20c" path="res://scenes/npcs/Glen_Mathews.tscn" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://d1roif1c0o46" path="res://scenes/npcs/Man_Greasley.tscn" id="12_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://dgybj7npmq15r" path="res://scenes/npcs/Mike_Gefaengnis.tscn" id="13_trceg"]
 
 [node name="Main" type="Node" unique_id=2117982322]
 
 [node name="Node2D" parent="." unique_id=1867850265 instance=ExtResource("1_o5qli")]
 position = Vector2(452, 622)
 
-[node name="Fernando" parent="." unique_id=1139556431 instance=ExtResource("4_jyhfs")]
-position = Vector2(642, 344)
-npc_id = "fernando"
-npc_name = "Fernando"
-
 [node name="Player" parent="." unique_id=1220295638 instance=ExtResource("3_sugp2")]
 position = Vector2(556, 337)
 
 [node name="DialogueUI" parent="." unique_id=1934225950 instance=ExtResource("2_0wfyh")]
 visible = false
+
+[node name="Marius" parent="." unique_id=493744755 instance=ExtResource("5_tbgi4")]
+position = Vector2(506, 392)
+
+[node name="Steffi" parent="." unique_id=1049871332 instance=ExtResource("6_tefeu")]
+position = Vector2(439, 282)
+
+[node name="Meff" parent="." unique_id=913907408 instance=ExtResource("7_o6xl0")]
+position = Vector2(625, 449)
+
+[node name="Lemmy" parent="." unique_id=1925305965 instance=ExtResource("10_choun")]
+position = Vector2(537, 210)
+
+[node name="Glen_Mathews" parent="." unique_id=1066703720 instance=ExtResource("11_ya4ey")]
+position = Vector2(639, 108)
+
+[node name="Man_Greasley" parent="." unique_id=2090545289 instance=ExtResource("12_eb6dy")]
+position = Vector2(751, 310)
+
+[node name="Mike_Gefaengnis" parent="." unique_id=753369463 instance=ExtResource("13_trceg")]
+position = Vector2(954, 108)
+
+[node name="Annegret" parent="." unique_id=1352726782 instance=ExtResource("9_85g3d")]
+position = Vector2(277, 462)
+
+[node name="Cornelia" parent="." unique_id=1585804969 instance=ExtResource("8_tipki")]
+position = Vector2(469, 473)
+
+[node name="Fernando" parent="." unique_id=1139556431 instance=ExtResource("4_jyhfs")]
+position = Vector2(647, 366)
