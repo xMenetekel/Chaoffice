@@ -4,9 +4,6 @@
 [ext_resource type="Script" uid="uid://0w4pwrg5u02l" path="res://scenes/npcs/base_npc.gd" id="2_408yk"]
 [ext_resource type="Texture2D" uid="uid://kjbk5s25mrw0" path="res://assets/godot/walkingHumans/menschpreset.png" id="3_408yk"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_408yk"]
-size = Vector2(34, 52)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_gqjuk"]
 atlas = ExtResource("3_408yk")
 region = Rect2(256, 128, 64, 64)
@@ -154,15 +151,17 @@ animations = [{
 "speed": 4.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_408yk"]
+radius = 4.0
+height = 20.0
+
 [node name="Fernando" unique_id=1139556431 instance=ExtResource("1_m0aaq")]
 script = ExtResource("2_408yk")
+npc_id = "fernando"
+npc_name = "Fernando"
 
-[node name="CollisionShape2D" parent="." index="0" unique_id=661832740]
-position = Vector2(0, 3)
-shape = SubResource("RectangleShape2D_408yk")
-
-[node name="CollisionShape2D" parent="Area2D" parent_id_path=PackedInt32Array(1842933805) index="0" unique_id=1862917947]
-disabled = false
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="2" unique_id=850347401]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0" unique_id=850347401]
 sprite_frames = SubResource("SpriteFrames_sdin7")
+
+[node name="CollisionShape2D" parent="." index="2" unique_id=1308473348]
+shape = SubResource("CapsuleShape2D_408yk")

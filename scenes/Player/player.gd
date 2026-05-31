@@ -5,7 +5,17 @@ extends CharacterBody2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	add_to_group("player")
+	DialogueManager.dialogue_started.connect(_on_dialogue_started)
+	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
 
+
+func _on_dialogue_started(_npc_id: String) -> void:
+	set_process(false)
+	velocity = Vector2.ZERO
+	$AnimatedSprite2D.stop()
+
+func _on_dialogue_finished(_npc_id: String) -> void:
+	set_process(true)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -30,6 +40,3 @@ func move_player():
 		$AnimatedSprite2D.play("move_down")
 	else: 
 		$AnimatedSprite2D.stop()
-		
-		
-	move_and_slide()
