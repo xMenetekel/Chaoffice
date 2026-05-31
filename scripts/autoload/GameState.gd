@@ -19,3 +19,8 @@ func set_flag(key: String, value: bool = true) -> void:
 
 func get_flag(key: String) -> bool:
 	return flags.get(key, false)
+
+#_ready nur für dev um custom den Tag zu setten
+func _ready() -> void:
+	day_index = 0
+	print(DAYS[day_index])
