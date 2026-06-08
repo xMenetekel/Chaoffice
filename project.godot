@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameState="*uid://c0wiixblakc40"
 DialogueManager="*uid://2icjrp3tebon"
+PlayerLocation="*uid://duw477joex6t2"
 
 [dotnet]
 

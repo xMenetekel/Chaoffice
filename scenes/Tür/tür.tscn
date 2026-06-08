@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cfka6qvqje5em"]
+
+[ext_resource type="Script" uid="uid://l6mo7jwv0mor" path="res://scenes/tür.gd" id="1_3ieab"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iplhh"]
+size = Vector2(29, 26)
+
+[node name="Tür" type="Area2D" unique_id=1381082330]
+script = ExtResource("1_3ieab")
+next_scene = "res://scenes/Buero1/buero_1.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1622384625]
+shape = SubResource("RectangleShape2D_iplhh")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
