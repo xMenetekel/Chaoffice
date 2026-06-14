@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b028arl1ts81r"
-path="res://.godot/imported/Annegret.png-79297d521c9317969772740ae4595d9c.ctex"
+uid="uid://bfqgofxivte15"
+path="res://.godot/imported/janosch_walking.png-ea83d4425f95dfbad20fe94e56cbaa20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/Annegret.png"
-dest_files=["res://.godot/imported/Annegret.png-79297d521c9317969772740ae4595d9c.ctex"]
+source_file="res://assets/godot/walkingHumans/janosch_walking.png"
+dest_files=["res://.godot/imported/janosch_walking.png-ea83d4425f95dfbad20fe94e56cbaa20.ctex"]
 
 [params]
 
