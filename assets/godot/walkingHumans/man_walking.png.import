@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hxyqi3wa62kw"
-path="res://.godot/imported/Cornelia.png-b153c8c990adcc65e1d61276e7ba55e2.ctex"
+uid="uid://50tkxjr86tol"
+path="res://.godot/imported/man_walking.png-a5a0bf3afc07de7e0e15d3a8c36bcd57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/Cornelia.png"
-dest_files=["res://.godot/imported/Cornelia.png-b153c8c990adcc65e1d61276e7ba55e2.ctex"]
+source_file="res://assets/godot/walkingHumans/man_walking.png"
+dest_files=["res://.godot/imported/man_walking.png-a5a0bf3afc07de7e0e15d3a8c36bcd57.ctex"]
 
 [params]
 
