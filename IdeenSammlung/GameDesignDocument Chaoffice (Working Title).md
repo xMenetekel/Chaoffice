@@ -255,13 +255,13 @@ Dem Notizbuch wird hinzugefügt:
 		- Constraints der Einordnung sind Platzgröße im Büro (3 Teams, eines links oben, eines rechts unten, eins wohl einfach nur Lemmy, rechts in der Mitte). Vorher nicht
 		- Richtigkeit der Einordnung nur vage bewertet - Mehrere große Konflikte sollten gelöst werden, viele kleine Konflikte sind nur optional zum lösen für die optimale Lösung, aber das wird nicht bewertet. Nur Aussage, dass dies die perfekte Lösung ist wird gelobt
 		- Erinnert an Spiele wie "is this seat taken", wo man Menschen nach ihren Vorlieben platzieren muss - allerdings abgespeckter, da sich die NPCs ihren Platz innerhalb der Gruppen selber aufteilen
-	- Vermittelt das Konzept einer sinnvollen Aufteilung in Strukturen durch eigenes rumexperimentieren und individuellem NPC Feedback, wie sie miteinander interagieren sollen - vgl Konstruktivismus, individueller/sozialer Ansatz
-		 - es ist konstruierter Konstruktivismus indem man ein künstlicher Teil des erstellten Büros wird und dann mit den dort bestehenden Individuen, die Teile des Systems, interagiert, sich immersiv in diese Welt einordnet und interaktiv die Welt verändert, dadurch das man seine fellow Individuen unterstützt in der Lösungsfindung. 
-		 - Man erschafft neue Strukturen, indem man den NPCs aus ihren bisherigen Strukturen hinaushilft - die neue Struktur kann ohne die vorher vorhandenen "negativ" Strukturen, welche bereits von den NPCs vorgegeben wird, nicht entstanden sein, da sie bereits in der konstruierten Welt für sie unzufriedene Erfahrungen gehabt haben.
-		 - Durch neue Strukturen kann der MC wieder mit den NPCs reden und so herausfinden, ob die neue Position der richtige Weg ist, um das Team aufzuteilen - Der MC konstruiert auf Basis des Informationsaustausch der NPCs und dem MC eine neue Realität, die den NPCs zugute kommt - positives Feedback der NPCs befeuert somit den Spieler, die optimale Lösung zu finden
-		 - direkt wird die Anwendung dieser Struktur angezeigt, denn NPCs können folglich untereinander besser Informationen austauschen, da sie im selben Raum sitzen. 
+	- *Vermittelt das Konzept einer sinnvollen Aufteilung in Strukturen durch eigenes rumexperimentieren und individuellem NPC Feedback, wie sie miteinander interagieren sollen - vgl Konstruktivismus, individueller/sozialer Ansatz*
+		 - *es ist konstruierter Konstruktivismus indem man ein künstlicher Teil des erstellten Büros wird und dann mit den dort bestehenden Individuen, die Teile des Systems, interagiert, sich immersiv in diese Welt einordnet und interaktiv die Welt verändert, dadurch das man seine fellow Individuen unterstützt in der Lösungsfindung.*
+		 - *Man erschafft neue Strukturen, indem man den NPCs aus ihren bisherigen Strukturen hinaushilft - die neue Struktur kann ohne die vorher vorhandenen "negativ" Strukturen, welche bereits von den NPCs vorgegeben wird, nicht entstanden sein, da sie bereits in der konstruierten Welt für sie unzufriedene Erfahrungen gehabt haben.*
+		 - *Durch neue Strukturen kann der MC wieder mit den NPCs reden und so herausfinden, ob die neue Position der richtige Weg ist, um das Team aufzuteilen - Der MC konstruiert auf Basis des Informationsaustausch der NPCs und dem MC eine neue Realität, die den NPCs zugute kommt - positives Feedback der NPCs befeuert somit den Spieler, die optimale Lösung zu finden*
+		 - *direkt wird die Anwendung dieser Struktur angezeigt, denn NPCs können folglich untereinander besser Informationen austauschen, da sie im selben Raum sitzen.* 
 	- Benachrichtigungsketten der NPCs werden implizit durch vorgegebene Dialoge vereinfacht -> "Was hältst du davon die Änderungen selber zu machen und dann direkt abzugeben" bzw "Was hältst du davon, die Änderungen nur an diese Person weiterzugeben?" etc
-	- Konstruktion und Rekonstruktion somit umgesetzt, Dekonstruktion findet dann im außen statt, wenn die Zielgruppe des Lernspiels aktiv mit ähnlichen Situationen konfrontiert wird
+	- *Konstruktion und Rekonstruktion somit umgesetzt, Dekonstruktion findet dann im außen statt, wenn die Zielgruppe des Lernspiels aktiv mit ähnlichen Situationen konfrontiert wird*
 - Nach erfolgreichen Abschließen des Rätsels sind alle NPCs glücklich und der MC kriegt die Option nachhause zu gehen, darf sich aber durchaus weiter umschauen für weitere optionale Nebenquests, die dem Silliness und Chaos Vibes des Büros beitragen
 ##### ==Tag 2== (Mittwoch) -> UML
 - Beim Betreten des Büros am Mittwoch stellt der Spieler fest, dass das Büro wesentlich aufgeräumter, wenn auch nicht komplett sauber, ist als vorher. 
@@ -285,6 +285,14 @@ Dem Notizbuch wird hinzugefügt:
 			- "Diese Hose kann ohne Hostentaschen nicht existieren" vs "Diese Hosentasche kann ohne Hose nicht existieren"
 			- man sieht live den Impact der Pfeile in einer wunderschön farblich kodierten Textbox
 			- auch als Bild möglich aber das ist komplexe Logik + viele Assets
+		- *hiermit starker Fokus Konstruktivismus (hauptsächlich Konstruktion), da individueller Entscheidungsprozess und individuelles Ausprobieren die eigene passende Welt dieses Büros schafft und wie die gedachte Welt dort weiterfunktionieren wird*
+			- *das UML Diagramm ist hier analog zu dem menschlichen Konstrukt der Wirklichkeit welches sich in einem menschlichen Konstrukt der Wirklichkeit (Das Büro) befindet.*
+			- *Vergangenes Wissen ist alles was der Spieler bereits weiß über das Leben, vgl. das Konzept Apfelplantage + und simple mathematische Konzepte von Vervielfältigung und es wird zusammengesetzt mit dem neuen Wissen wie man diese beiden Konzepte kombiniert um Diagramme für Softwareentwicklung zu schaffen*
+			- *Es entsteht ein taugliches Konzept für das Umfeld im Spiel, das Büro und die Firma, der Spieler bewertet nutzen selber*
+				- *selbst wenn nur alberne Sachen gemacht wurden um zu schauen was passiert und dies dann eingeloggt wird, verlässt der Spieler das Minispiel mit dem Gedanken, dass das nicht richtig ist -> Lernziel erreicht, da der Spieler weiß was falsch aussieht - das kritische Hinterfragen hat stattgefunden*
+			- *die Vorraussetzung zur Konstruktion sind hier erfüllt: Selbstbestimmung wird voll ausgeführt, indem der Spieler jeden Wert abgeben kann, nachdem ausführlich rumexperimentiert wurde und Selbstwert basierend auf dem Spieler bedingt auch erfüllt - wer bis zu diesem Zeitpunkt spielt ohne aufzuhören, der will ja auch irgendwo am Lernprozess teilhabe leisten*
+			- *Rekonstruktion TBE (to bei eingefügt)*
+			- *Dekonstruktion passiert im aussen, da der Spieler nun die Mittel besitzt, das gelernte Wissen aktiv in den Lehrveranstaltungen Softwaretechnik, Softwareprojekt umzusetzen - dort neues ausseinandersetzen mit den Lehrinhalten*
 - Sequenzdiagramm: Aufzeigen der richtigen Syntax durch Wasserlaufspiel
 	- Ein Sequenzdiagramm mit vielen Fehlstellen
 	- MC zeigt mit Ablauflinie, die einem Wasserstrom gleicht, wo das Sequenzdiagramm schief läuft, ab wo der Strom blockiert wird
