@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxner5l1h17jo"
-path="res://.godot/imported/wc-26ctuer.png-8c50eeeee41eae9fce1678b7c46a7a46.ctex"
+uid="uid://ds08bb8wyyya7"
+path="res://.godot/imported/sprechblase.png-34e74ab61b5967fc5a476a68a038a28d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/wc-26ctuer.png"
-dest_files=["res://.godot/imported/wc-26ctuer.png-8c50eeeee41eae9fce1678b7c46a7a46.ctex"]
+source_file="res://assets/godot/custom/sprechblase.png"
+dest_files=["res://.godot/imported/sprechblase.png-34e74ab61b5967fc5a476a68a038a28d.ctex"]
 
 [params]
 

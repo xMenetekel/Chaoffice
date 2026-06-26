@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" format=3 uid="uid://pwdkpcdq72u5"]
 
-[ext_resource type="Texture2D" uid="uid://cmniy6r1axa6y" path="res://assets/godot/gridlock.png" id="1_1vh8l"]
+[ext_resource type="Texture2D" uid="uid://cmniy6r1axa6y" path="res://assets/godot/custom/gridlock.png" id="1_1vh8l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1r4sl"]
 texture = ExtResource("1_1vh8l")

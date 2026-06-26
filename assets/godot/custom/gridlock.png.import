@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbm6sq4x6dqu4"
-path="res://.godot/imported/wc2.png-8484191d741e05572cce0f95fae86321.ctex"
+uid="uid://cmniy6r1axa6y"
+path="res://.godot/imported/gridlock.png-b52c2fbfafdf9788a124c83be34f1c15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/wc2.png"
-dest_files=["res://.godot/imported/wc2.png-8484191d741e05572cce0f95fae86321.ctex"]
+source_file="res://assets/godot/custom/gridlock.png"
+dest_files=["res://.godot/imported/gridlock.png-b52c2fbfafdf9788a124c83be34f1c15.ctex"]
 
 [params]
 

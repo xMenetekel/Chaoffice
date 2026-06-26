@@ -10,6 +10,7 @@ var _active_npc: String = ""
 var _active_npc_name: String = ""
 var _is_active: bool = false
 var _ui: DialogueUI
+const MONOLOGUE_ID := "inner_monologue"
 
 func init(ui: DialogueUI) -> void:
 	_ui = ui
@@ -78,3 +79,8 @@ func _end_dialogue() -> void:
 
 	_ui.hide_dialogue()
 	emit_signal("dialogue_finished", finished_npc)
+
+func show_monologue(lines: Array) -> void:
+	start_dialogue(MONOLOGUE_ID, "", [
+		{ "lines": lines }
+	])

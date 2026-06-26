@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://datk6nvv4rleo"]
 
-[ext_resource type="Script" uid="uid://c5cdywxf3vvni" path="res://scenes/refactoring/click_zone.gd" id="1_alqw0"]
+[ext_resource type="Script" uid="uid://c5cdywxf3vvni" path="res://scripts/refactoring/click_zone.gd" id="1_alqw0"]
 
 [node name="ClickZone" type="Control" unique_id=1477854688]
 layout_mode = 3
@@ -21,9 +21,16 @@ anchor_bottom = 1.0
 offset_right = -3.0
 color = Color(0.427493, 0.42749307, 0.42749307, 1)
 
-[node name="FlagIcon" type="TextureRect" parent="." unique_id=1166526461]
+[node name="FlagGreen" type="TextureRect" parent="." unique_id=1166526461]
 layout_mode = 0
 offset_left = 1062.0
 offset_top = 574.0
 offset_right = 1117.0
 offset_bottom = 625.0
+
+[node name="FlagRed" type="TextureButton" parent="." unique_id=34553547]
+layout_mode = 0
+offset_left = 1062.0
+offset_top = 574.0
+offset_right = 1110.0
+offset_bottom = 621.0

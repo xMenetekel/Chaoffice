@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cqq40uj6jkue6"]
 
-[ext_resource type="Texture2D" uid="uid://ds08bb8wyyya7" path="res://assets/godot/sprechblase.png" id="1_0qyo7"]
+[ext_resource type="Texture2D" uid="uid://ds08bb8wyyya7" path="res://assets/godot/custom/sprechblase.png" id="1_0qyo7"]
 [ext_resource type="Script" uid="uid://5scn3n0daaja" path="res://scripts/dialogue_ui.gd" id="1_7d2kc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_0qyo7"]

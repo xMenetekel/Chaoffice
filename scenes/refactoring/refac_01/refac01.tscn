@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bcanomcmupi5m"]
+
+[ext_resource type="Script" uid="uid://xvgxwkry46du" path="res://scripts/refactoring/snippet_controller.gd" id="1_jmsx0"]
+[ext_resource type="PackedScene" uid="uid://datk6nvv4rleo" path="res://scenes/refactoring/click_zone.tscn" id="1_m1ivt"]
+[ext_resource type="PackedScene" uid="uid://cqq40uj6jkue6" path="res://scenes/DialogueUI.tscn" id="2_7hm42"]
+[ext_resource type="PackedScene" uid="uid://55r60w2ullo" path="res://scenes/refactoring/options_panel.tscn" id="3_7hm42"]
+
+[node name="Refac01" type="Control" unique_id=132987931]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jmsx0")
+
+[node name="InterfaceScreen" type="TextureRect" parent="." unique_id=2008101141]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.9990001
+anchor_bottom = 1.0
+offset_right = 0.15185547
+offset_bottom = 1.0
+
+[node name="ClickZone01" parent="." unique_id=1477854688 instance=ExtResource("1_m1ivt")]
+layout_mode = 1
+offset_left = 23.0
+offset_top = 22.0
+offset_right = -539.0
+offset_bottom = -478.0
+zone_id = "#01zone01"
+
+[node name="ClickZone02" parent="." unique_id=992896777 instance=ExtResource("1_m1ivt")]
+layout_mode = 1
+offset_left = 22.0
+offset_top = 174.0
+offset_right = -539.0
+offset_bottom = -424.0
+zone_id = "#01zone02"
+
+[node name="ClickZone03" parent="." unique_id=1311357802 instance=ExtResource("1_m1ivt")]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 228.0
+offset_right = -539.0
+offset_bottom = -272.0
+zone_id = "#01zone03"
+
+[node name="DialogueUI" parent="." unique_id=1934225950 instance=ExtResource("2_7hm42")]
+
+[node name="OptionsPanel" parent="." unique_id=1732542021 instance=ExtResource("3_7hm42")]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = 392.0
+offset_right = -1145.0
+offset_bottom = -256.0

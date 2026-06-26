@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c4gysfo6y4tk1"]
+
+[ext_resource type="Script" uid="uid://bqlhdd1heoljv" path="res://scripts/refactoring/option_card.gd" id="1_vru7y"]
+
+[node name="OptionCard" type="Control" unique_id=1007725367]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vru7y")
+
+[node name="Vorschlag" type="TextureRect" parent="." unique_id=2052387312]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 1143.0
+offset_bottom = 679.0
+
+[node name="Control" type="Control" parent="." unique_id=1974395754]
+anchors_preset = 0
+offset_right = 1188.0
+offset_bottom = 658.0

@@ -1,0 +1,21 @@
+{
+  "selection_feedback": {
+    "wrong": [
+      "wrong"
+    ]
+  },
+  "zones": {
+    "refac01_block_a": {
+      "wrong": [
+        "wrong"
+      ]
+    },
+    "refac01_block_c": {
+      "wrong": [
+      ],
+      "correct": [
+        "true"
+      ]
+    }
+  }
+}
