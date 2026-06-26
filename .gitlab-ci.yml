@@ -7,6 +7,8 @@ stages:
 test-build:
   image: barichello/godot-ci:4.6.3
   stage: test
+  tags:
+  - ssd
   script:
   - mkdir dist
   - godot --headless --verbose --export-release "Web"

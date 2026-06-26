@@ -24,6 +24,10 @@ DialogueManager="*uid://2icjrp3tebon"
 
 project/assembly_name="Godot Chaoffice Working Title"
 
+[gui]
+
+theme/custom_font="uid://cne2dx0rx4adc"
+
 [input]
 
 move_left={
