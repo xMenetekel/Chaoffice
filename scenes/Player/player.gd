@@ -5,6 +5,7 @@ class_name Player
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	position = PlayerLocation.player_spawn_position
 	add_to_group("player")
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)

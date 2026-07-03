@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="2_d4d15"]
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="3_lhei4"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="4_d4d15"]
+[ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="5_lhei4"]
 
 [node name="Node2D_BueroBoss" type="Node2D" unique_id=929003042]
 
@@ -44,4 +45,9 @@ tile_set = ExtResource("3_lhei4")
 tile_set = ExtResource("3_lhei4")
 
 [node name="Player" parent="." unique_id=587769380 instance=ExtResource("4_d4d15")]
-position = Vector2(339, -490)
+position = Vector2(283, -526)
+
+[node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("5_lhei4")]
+position = Vector2(244, -507)
+next_scene = "res://scenes/main.tscn"
+player_spawn_position = Vector2(160, -510)

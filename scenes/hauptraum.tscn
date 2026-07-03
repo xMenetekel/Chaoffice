@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="2_4dvvg"]
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="3_rnjyy"]
 [ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="4_o7jhm"]
+[ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="5_iplhh"]
 
 [node name="Node2D" type="Node2D" unique_id=1867850265]
 
@@ -54,11 +55,21 @@ tile_set = ExtResource("2_4dvvg")
 
 [node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("4_o7jhm")]
 position = Vector2(-319, -196)
+player_spawn_position = Vector2(-319, -261)
+
+[node name="Tür2" parent="." unique_id=1489370295 instance=ExtResource("4_o7jhm")]
+position = Vector2(198, -150)
+next_scene = "res://scenes/Buero2/buero_2.tscn"
+player_spawn_position = Vector2(297, -325)
+
+[node name="Tür3" parent="." unique_id=943729481 instance=ExtResource("4_o7jhm")]
+position = Vector2(197, -490)
+next_scene = "res://scenes/BueroBoss/buero_boss.tscn"
+player_spawn_position = Vector2(283, -526)
 
 [node name="Node2D_KaffeeKueche" type="Node2D" parent="." unique_id=1911760368]
 
 [node name="Fußboden" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=1081659445]
-visible = false
 position = Vector2(160, 190)
 tile_map_data = PackedByteArray("AADu//T/AAAJAAAAAADu//X/AAAJAAAAAADu//b/AAAJAAAAAADv//T/AAAJAAAAAADv//X/AAAJAAAAAADv//b/AAAJAAAAAADw//T/AAAJAAAAAADw//X/AAAJAAAAAADw//b/AAAJAAAAAADx//T/AAAJAAAAAADx//X/AAAJAAAAAADx//b/AAAJAAAAAADy//T/AAAJAAAAAADy//X/AAAJAAAAAADy//b/AAAJAAAAAADz//T/AAAJAAAAAADz//X/AAAJAAAAAADz//b/AAAJAAAAAAD0//T/AAAJAAAAAAD0//X/AAAJAAAAAAD0//b/AAAJAAAAAAD1//T/AAAJAAAAAAD1//X/AAAJAAAAAAD1//b/AAAJAAAAAAD2//T/AAAJAAAAAAD2//X/AAAJAAAAAAD2//b/AAAJAAAAAAD3//T/AAAJAAAAAAD3//X/AAAJAAAAAAD3//b/AAAJAAAAAAD4//T/AAAJAAAAAAD4//X/AAAJAAAAAAD4//b/AAAJAAAAAAD5//X/AAAJAAAAAAD5//b/AAAJAAAAAAD5//T/AAAJAAAAAAA=")
 tile_set = ExtResource("1_rnjyy")
@@ -93,6 +104,5 @@ tile_set = ExtResource("2_4dvvg")
 [node name="Tag1_1" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=997875736]
 tile_set = ExtResource("2_4dvvg")
 
-[node name="Tür2" parent="." unique_id=1489370295 instance=ExtResource("4_o7jhm")]
-position = Vector2(179, -147)
-next_scene = "res://scenes/Buero2/buero_2.tscn"
+[node name="Player" parent="." unique_id=587769380 instance=ExtResource("5_iplhh")]
+position = Vector2(-384, -8)

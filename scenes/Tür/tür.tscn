@@ -8,6 +8,7 @@ size = Vector2(29, 26)
 [node name="Tür" type="Area2D" unique_id=1381082330]
 script = ExtResource("1_3ieab")
 next_scene = "res://scenes/Buero1/buero_1.tscn"
+player_spawn_position = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1622384625]
 shape = SubResource("RectangleShape2D_iplhh")

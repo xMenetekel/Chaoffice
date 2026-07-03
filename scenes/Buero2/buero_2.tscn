@@ -46,8 +46,9 @@ tile_set = ExtResource("3_7yyin")
 tile_set = ExtResource("3_7yyin")
 
 [node name="Player" parent="." unique_id=587769380 instance=ExtResource("4_2fosl")]
-position = Vector2(328, -320)
+position = Vector2(297, -325)
 
 [node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("5_jupeq")]
 position = Vector2(243, -306)
 next_scene = "res://scenes/main.tscn"
+player_spawn_position = Vector2(160, -170)
