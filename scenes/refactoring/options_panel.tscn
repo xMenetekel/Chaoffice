@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://55r60w2ullo"]
+
+[ext_resource type="Script" uid="uid://bljj5xkrs73p7" path="res://scripts/refactoring/options_panel.gd" id="1_4dfej"]
+[ext_resource type="PackedScene" uid="uid://c4gysfo6y4tk1" path="res://scenes/refactoring/option_card.tscn" id="1_iwutw"]
+
+[node name="OptionsPanel" type="Control" unique_id=1732542021]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4dfej")
+
+[node name="OptionCard_a" parent="." unique_id=254714230 instance=ExtResource("1_iwutw")]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 24.0
+offset_bottom = 8.0
+
+[node name="OptionCard_b" parent="." unique_id=1007725367 instance=ExtResource("1_iwutw")]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 216.0
+offset_right = 24.0
+offset_bottom = 216.0
+option_id = "option_b"
+
+[node name="OptionCard_c" parent="." unique_id=1661773727 instance=ExtResource("1_iwutw")]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 430.0
+offset_right = 24.0
+offset_bottom = 430.0
+option_id = "option_c"

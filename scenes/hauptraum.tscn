@@ -3,8 +3,9 @@
 [ext_resource type="TileSet" uid="uid://pwdkpcdq72u5" path="res://assets/godot/TileSets/biggriddy.tres" id="1_rnjyy"]
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="2_4dvvg"]
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="3_rnjyy"]
+[ext_resource type="PackedScene" uid="uid://c4jtfde5ysste" path="res://scenes/refactoring/refac_02/entry_raetsel.tscn" id="4_o7jhm"]
 
-[node name="Node2D" type="Node2D" unique_id=1867850265]
+[node name="Hauptraum" type="Node2D" unique_id=1867850265]
 position = Vector2(451, 622)
 
 [node name="Fußboden" type="TileMapLayer" parent="." unique_id=1176953806]
@@ -51,6 +52,9 @@ tile_set = ExtResource("2_4dvvg")
 [node name="Tag1_01" type="TileMapLayer" parent="." unique_id=1160740905]
 tile_map_data = PackedByteArray("AAAfAAX/AAAEAAAAAAA=")
 tile_set = ExtResource("2_4dvvg")
+
+[node name="EntryRaetsel" parent="." unique_id=1943143851 instance=ExtResource("4_o7jhm")]
+position = Vector2(57, -371)
 
 [node name="Node2D_KaffeeKueche" type="Node2D" parent="." unique_id=1911760368]
 

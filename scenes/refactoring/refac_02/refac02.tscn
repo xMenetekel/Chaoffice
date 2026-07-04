@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://bthsvwd5cetrn"]
+
+[ext_resource type="PackedScene" uid="uid://datk6nvv4rleo" path="res://scenes/refactoring/click_zone.tscn" id="1_qlv15"]
+[ext_resource type="Script" uid="uid://xvgxwkry46du" path="res://scripts/refactoring/snippet_controller.gd" id="1_rf3wh"]
+[ext_resource type="PackedScene" uid="uid://cqq40uj6jkue6" path="res://scenes/DialogueUI.tscn" id="2_0ak8t"]
+[ext_resource type="Texture2D" uid="uid://cu4k6nr151l25" path="res://assets/godot/custom/placeholder.png" id="2_vutnj"]
+[ext_resource type="PackedScene" uid="uid://55r60w2ullo" path="res://scenes/refactoring/options_panel.tscn" id="3_ayffu"]
+[ext_resource type="PackedScene" uid="uid://dtukgwyux8afi" path="res://scenes/refactoring/confirm_button.tscn" id="6_vutnj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vutnj"]
+atlas = ExtResource("2_vutnj")
+region = Rect2(293, 59, 1152, 648)
+
+[node name="Refac02" type="Control" unique_id=132987931]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rf3wh")
+snippet_id = "refac_02"
+correct_zone_ids = Array[String](["02zone01", "02zone03"])
+
+[node name="InterfaceScreen" type="TextureRect" parent="." unique_id=2008101141]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.9990001
+anchor_bottom = 1.0
+offset_right = 1.1518555
+mouse_filter = 2
+texture = SubResource("AtlasTexture_vutnj")
+
+[node name="ClickZone01" parent="." unique_id=1477854688 instance=ExtResource("1_qlv15")]
+layout_mode = 1
+anchor_top = 0.056
+anchor_bottom = 0.164
+offset_top = -3.288002
+offset_right = -42.0
+offset_bottom = -1.2720032
+zone_id = "02zone01"
+
+[node name="ClickZone02" parent="." unique_id=1445316067 instance=ExtResource("1_qlv15")]
+layout_mode = 1
+anchor_top = 0.17300001
+anchor_right = 0.42900002
+anchor_bottom = 0.287
+offset_top = -0.104003906
+offset_right = -0.20800781
+offset_bottom = 0.024002075
+zone_id = "02zone02"
+
+[node name="ClickZone03" parent="." unique_id=1911246810 instance=ExtResource("1_qlv15")]
+layout_mode = 1
+anchor_left = 0.001
+anchor_top = 0.312
+anchor_bottom = 0.42900002
+offset_left = -0.15200007
+offset_top = -0.17601013
+offset_right = -41.0
+offset_bottom = 0.0079956055
+zone_id = "02zone03"
+
+[node name="DialogueUI" parent="." unique_id=1934225950 instance=ExtResource("2_0ak8t")]
+
+[node name="OptionsPanel" parent="." unique_id=1732542021 instance=ExtResource("3_ayffu")]
+layout_mode = 0
+offset_left = 617.0
+offset_top = 1.0
+offset_right = 617.0
+offset_bottom = 1.0
+correct_option_by_zone = {
+"02zone01": "option_a",
+"02zone03": ["option_b", "option_c"]
+}
+
+[node name="ConfirmButton" parent="." unique_id=819249123 instance=ExtResource("6_vutnj")]
+layout_mode = 1
+offset_left = 880.0
+offset_top = 7.0
+offset_right = -9.0
+offset_bottom = -537.0
