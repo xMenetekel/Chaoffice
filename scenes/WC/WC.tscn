@@ -3,7 +3,54 @@
 [ext_resource type="TileSet" uid="uid://yk1lgavk1ukp" path="res://assets/godot/TileSets/groß_WC.tres" id="1_oatf1"]
 [ext_resource type="TileSet" uid="uid://bvh033h6ouov8" path="res://assets/godot/TileSets/klein_WC.tres" id="2_fcwt6"]
 [ext_resource type="TileSet" uid="uid://pwdkpcdq72u5" path="res://assets/godot/TileSets/biggriddy.tres" id="2_oatf1"]
+[ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="4_gf68m"]
 [ext_resource type="TileSet" uid="uid://dc1a8sskrr7og" path="res://assets/godot/TileSets/kleinWC_immernoch.tres" id="4_vb7wp"]
+[ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="6_6bn5j"]
+[ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="7_lx1b7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyvch"]
+texture = ExtResource("4_gf68m")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+4:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+18:19/0 = 0
+19:19/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fo8ww"]
+sources/0 = SubResource("TileSetAtlasSource_jyvch")
 
 [node name="Node2D" type="Node2D" unique_id=193485589]
 
@@ -19,7 +66,9 @@ tile_set = ExtResource("2_oatf1")
 tile_map_data = PackedByteArray("AADP/w4AAAABAAAAAACv/w4AAAABAAAAAACP/w4AAAABAAAAAADu/w4AAAABAAAAAABS/wMAAAAHAAAAAABT//v/AAAHAAEAAABs/wUAAAAIAAEAAAAV/wUAAAAIAAEAAAAw/wMAAAAHAAAAAAAx//v/AAAHAAEAAAA=")
 tile_set = ExtResource("2_fcwt6")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1972709606]
+[node name="WandDetails" type="TileMapLayer" parent="." unique_id=1972709606]
+tile_map_data = PackedByteArray("AADv/wIAAAAKAAMAAADv/wMAAAAKAAQAAADv/wQAAAAKAAUAAADv/wUAAAAKAAYAAADv/wYAAAAKAAcAAADw/wIAAAALAAMAAADw/wMAAAALAAQAAADw/wQAAAALAAUAAADw/wUAAAALAAYAAADw/wYAAAALAAcAAAA=")
+tile_set = SubResource("TileSet_fo8ww")
 
 [node name="Tag1" type="TileMapLayer" parent="." unique_id=296391505]
 tile_map_data = PackedByteArray("AADv/w4AAAACAAAAAADQ/w4AAAACAAAAAACw/w4AAAACAAAAAABx/xcAAAAGAAEAAAB1/yUAAAAGAAEAAACz/ysAAAAGAAEAAADx/1sAAAAGAAEAAAA=")
@@ -36,3 +85,11 @@ tile_set = ExtResource("4_vb7wp")
 [node name="Tag2" type="TileMapLayer" parent="." unique_id=1500157288]
 tile_map_data = PackedByteArray("AAAS/xAAAAAGAAEAAAAM/yEAAAAGAAAAAACM/yoAAAAGAAAAAAA=")
 tile_set = ExtResource("2_fcwt6")
+
+[node name="Player" parent="." unique_id=587769380 instance=ExtResource("6_6bn5j")]
+position = Vector2(-225, 50)
+
+[node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("7_lx1b7")]
+position = Vector2(-255, 68)
+next_scene = "res://scenes/hauptraum.tscn"
+player_spawn_position = Vector2(190, -310)

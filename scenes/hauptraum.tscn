@@ -4,6 +4,53 @@
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="2_4dvvg"]
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="3_rnjyy"]
 [ext_resource type="PackedScene" uid="uid://c4jtfde5ysste" path="res://scenes/refactoring/refac_02/entry_raetsel.tscn" id="4_o7jhm"]
+[ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="4_o7jhm"]
+[ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="5_0nl5y"]
+[ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="5_iplhh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rm07"]
+texture = ExtResource("5_0nl5y")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+4:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+18:19/0 = 0
+19:19/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_g2n35"]
+sources/0 = SubResource("TileSetAtlasSource_0rm07")
 
 [node name="Hauptraum" type="Node2D" unique_id=1867850265]
 position = Vector2(451, 622)
@@ -56,6 +103,25 @@ tile_set = ExtResource("2_4dvvg")
 [node name="EntryRaetsel" parent="." unique_id=1943143851 instance=ExtResource("4_o7jhm")]
 position = Vector2(57, -371)
 
+[node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("4_o7jhm")]
+position = Vector2(-319, -196)
+player_spawn_position = Vector2(-319, -261)
+
+[node name="Tür2" parent="." unique_id=1489370295 instance=ExtResource("4_o7jhm")]
+position = Vector2(221, -70)
+next_scene = "res://scenes/Buero2/buero_2.tscn"
+player_spawn_position = Vector2(260, -315)
+
+[node name="Tür3" parent="." unique_id=943729481 instance=ExtResource("4_o7jhm")]
+position = Vector2(220, -491)
+next_scene = "res://scenes/BueroBoss/buero_boss.tscn"
+player_spawn_position = Vector2(260, -525)
+
+[node name="Tür4" parent="." unique_id=1634690185 instance=ExtResource("4_o7jhm")]
+position = Vector2(219, -291)
+next_scene = "res://scenes/WC/WC.tscn"
+player_spawn_position = Vector2(-225, 50)
+
 [node name="Node2D_KaffeeKueche" type="Node2D" parent="." unique_id=1911760368]
 
 [node name="Fußboden" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=1081659445]
@@ -69,6 +135,9 @@ tile_map_data = PackedByteArray("AADz//j/AAAEAAMAABDz//n/AAAEAAQAABDz//r/AAAEAAU
 tile_set = ExtResource("1_rnjyy")
 
 [node name="DetailsWaende" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=433145009]
+position = Vector2(-3, 86)
+tile_map_data = PackedByteArray("AAANAPT/AAAKAAMAAAANAPX/AAAKAAQAAAANAPb/AAAKAAUAAAANAPf/AAAKAAYAAAANAPj/AAAKAAcAAAAOAPT/AAALAAMAAAAOAPX/AAALAAQAAAAOAPb/AAALAAUAAAAOAPf/AAALAAYAAAAOAPj/AAALAAcAAAANANr/AAAKAAMAAAANANv/AAAKAAQAAAANANz/AAAKAAUAAAANAN3/AAAKAAYAAAANAN7/AAAKAAcAAAAOANr/AAALAAMAAAAOANv/AAALAAQAAAAOANz/AAALAAUAAAAOAN3/AAALAAYAAAAOAN7/AAALAAcAAAANAOb/AAAKAAMAAAANAOf/AAAKAAQAAAANAOj/AAAKAAUAAAANAOn/AAAKAAYAAAANAOr/AAAKAAcAAAAOAOb/AAALAAMAAAAOAOf/AAALAAQAAAAOAOj/AAALAAUAAAAOAOn/AAALAAYAAAAOAOr/AAALAAcAAAA=")
+tile_set = SubResource("TileSet_g2n35")
 
 [node name="GroßeObjektekleinAdjustie" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=98430739]
 
@@ -93,3 +162,7 @@ tile_set = ExtResource("2_4dvvg")
 
 [node name="Tag1_1" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=997875736]
 tile_set = ExtResource("2_4dvvg")
+
+[node name="Player" parent="." unique_id=587769380 instance=ExtResource("5_iplhh")]
+y_sort_enabled = true
+position = Vector2(-388, -11)

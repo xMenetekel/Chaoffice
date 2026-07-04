@@ -4,9 +4,14 @@
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="2_erhsa"]
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="3_h7enf"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="4_erhsa"]
+[ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="5_h7enf"]
 
 [node name="Node2D_Buero1" type="Node2D" unique_id=274450897]
 y_sort_enabled = true
+
+[node name="Player" parent="." unique_id=587769380 instance=ExtResource("4_erhsa")]
+z_index = 1
+position = Vector2(-319, -261)
 
 [node name="Waende" type="TileMapLayer" parent="." unique_id=925906463]
 y_sort_enabled = true
@@ -51,6 +56,8 @@ tile_set = ExtResource("3_h7enf")
 tile_map_data = PackedByteArray("AAD2/q7+AAACAAIAAAD6/sf+AAADAAAAAAD7/sL+AAABAAEAAAD7/uT+AAAAAAEAAAD8/t3+AAABAAAAAAD+/iD+AAAEAAAAAAD+/jb+AAACAAAAAAAB/+T+AAADAAAAAAAC/yr+AAACAAAAAAAD/0n+AAACAAAAAAAE/zH+AAADAAAAAAAE/9b+AAABAAAAAAAF/xb+AAAEAAAAAAAI/6/+AAAEAAIAAAAI/8n+AAAEAAAAAAAL/8/+AAABAAAAAAAM/+H+AAABAAAAAAAN/zf+AAADAAAAAAA=")
 tile_set = ExtResource("3_h7enf")
 
-[node name="Player" parent="." unique_id=587769380 instance=ExtResource("4_erhsa")]
-z_index = 1
-position = Vector2(-224, -432)
+[node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("5_h7enf")]
+y_sort_enabled = true
+position = Vector2(-319, -200)
+next_scene = "res://scenes/main.tscn"
+player_spawn_position = Vector2(-320, -180)
