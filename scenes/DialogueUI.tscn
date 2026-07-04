@@ -21,27 +21,42 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("1_0qyo7")
 
-[node name="Control" type="Control" parent="Panel" unique_id=345447736]
-anchors_preset = 0
-offset_left = 49.0
-offset_top = 15.0
-offset_right = 1147.0
-offset_bottom = 258.0
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=643171397]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 35
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 50
 
-[node name="NPCName" type="Label" parent="Panel/Control" unique_id=1581703963]
-layout_mode = 0
-offset_right = 203.0
-offset_bottom = 20.0
+[node name="Control" type="Control" parent="Panel/MarginContainer" unique_id=345447736]
+layout_mode = 2
+
+[node name="NPCName" type="Label" parent="Panel/MarginContainer/Control" unique_id=1581703963]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.002
+anchor_top = -0.112
+anchor_right = 0.19600001
+offset_left = -0.06400013
+offset_top = -0.071998596
+offset_right = -0.27200317
+offset_bottom = 1.0
 label_settings = SubResource("LabelSettings_0qyo7")
 vertical_alignment = 1
 uppercase = true
 
-[node name="DialogueText" type="RichTextLabel" parent="Panel/Control" unique_id=556490139]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 18.0
-offset_right = 1088.0
-offset_bottom = 183.0
+[node name="DialogueText" type="RichTextLabel" parent="Panel/MarginContainer/Control" unique_id=556490139]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_constants/line_separation = 12
 theme_override_font_sizes/normal_font_size = 23
@@ -49,12 +64,49 @@ fit_content = true
 scroll_active = false
 text_direction = 1
 
-[node name="AdvanceHint" type="Label" parent="Panel/Control" unique_id=724469287]
-layout_mode = 0
-offset_left = 951.0
-offset_top = 199.0
-offset_right = 1062.0
-offset_bottom = 219.0
+[node name="AdvanceHint" type="Label" parent="Panel/MarginContainer/Control" unique_id=724469287]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77300006
+anchor_top = 1.024
+anchor_right = 0.89000005
+anchor_bottom = 1.13
+offset_left = 0.26391602
+offset_top = -0.056015015
+offset_right = -0.4800415
+offset_bottom = 2.0299988
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "[Space] Weiter"
+
+[node name="ConfirmOptionButton" type="TextureButton" parent="Panel/MarginContainer/Control" unique_id=271360277]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.762
+anchor_top = 0.929
+anchor_right = 1.065
+anchor_bottom = 1.148
+offset_left = -0.3840332
+offset_top = -0.0010070801
+offset_right = -0.080078125
+offset_bottom = -0.011993408
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("1_0qyo7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/Control/ConfirmOptionButton" unique_id=729566296]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.23300001
+anchor_top = 0.29700002
+anchor_right = 0.78300005
+anchor_bottom = 0.97300005
+offset_left = 0.070999146
+offset_top = 0.01099968
+offset_right = 11.92099
+offset_bottom = -0.0010032654
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "BESTAETIGEN"

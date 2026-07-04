@@ -7,6 +7,9 @@ func _ready() -> void:
 	add_to_group("player")
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
+	
+	if GameState.player_position != Vector2.ZERO:
+		global_position = GameState.player_position
 
 
 func _on_dialogue_started(_npc_id: String) -> void:

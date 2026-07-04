@@ -84,3 +84,9 @@ func show_monologue(lines: Array) -> void:
 	start_dialogue(MONOLOGUE_ID, "", [
 		{ "lines": lines }
 	])
+
+func cancel_dialogue() -> void:
+	_is_active = false
+	_current_lines = []
+	_current_index = 0
+	_ui.hide_dialogue()

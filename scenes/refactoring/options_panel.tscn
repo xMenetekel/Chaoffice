@@ -10,24 +10,23 @@ script = ExtResource("1_4dfej")
 
 [node name="OptionCard_a" parent="." unique_id=254714230 instance=ExtResource("1_iwutw")]
 layout_mode = 0
-offset_left = 98.0
-offset_top = 27.0
-offset_right = 98.0
-offset_bottom = 27.0
-option_id = "#01option_a"
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 24.0
+offset_bottom = 8.0
 
 [node name="OptionCard_b" parent="." unique_id=1007725367 instance=ExtResource("1_iwutw")]
 layout_mode = 0
-offset_left = 115.0
-offset_top = -1932.0
-offset_right = 115.0
-offset_bottom = -1932.0
-option_id = "#01option_b"
+offset_left = 24.0
+offset_top = 216.0
+offset_right = 24.0
+offset_bottom = 216.0
+option_id = "option_b"
 
 [node name="OptionCard_c" parent="." unique_id=1661773727 instance=ExtResource("1_iwutw")]
 layout_mode = 0
-offset_left = 144.0
-offset_top = 2182.0
-offset_right = 144.0
-offset_bottom = 2182.0
-option_id = "#01option_c"
+offset_left = 24.0
+offset_top = 430.0
+offset_right = 24.0
+offset_bottom = 430.0
+option_id = "option_c"

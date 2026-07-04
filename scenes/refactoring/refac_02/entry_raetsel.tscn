@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c4jtfde5ysste"]
+
+[ext_resource type="Script" uid="uid://c2xmc2ui277b7" path="res://scripts/refactoring/entry_raetsel_2.gd" id="1_4fd31"]
+[ext_resource type="Texture2D" uid="uid://dl6b5r565q335" path="res://assets/godot/custom/textures.png" id="1_a767o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fd31"]
+atlas = ExtResource("1_a767o")
+region = Rect2(1, 257.5, 30, 30)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fmrny"]
+radius = 48.04165
+
+[node name="EntryRaetsel" type="Area2D" unique_id=1943143851]
+script = ExtResource("1_4fd31")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1920098187]
+texture = SubResource("AtlasTexture_4fd31")
+
+[node name="InteractionRange" type="CollisionShape2D" parent="." unique_id=689432767]
+shape = SubResource("CircleShape2D_fmrny")

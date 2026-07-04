@@ -12,6 +12,10 @@ func _ready() -> void:
 	$Area2D.body_exited.connect(_on_body_exited)
 	GameState.day_changed.connect(_on_day_changed)
 	_load_dialogue()
+	
+	var saved_pos: Vector2 = GameState.get_npc_position(npc_id)
+	if saved_pos != Vector2.ZERO:
+		global_position = saved_pos
 
 func _load_dialogue() -> void:
 	var path := "res://dialogue/%s/%s.json" % [npc_id, GameState.current_day]
