@@ -57,6 +57,7 @@ tile_map_data = PackedByteArray("AAD2/q7+AAACAAIAAAD6/sf+AAADAAAAAAD7/sL+AAABAAE
 tile_set = ExtResource("3_h7enf")
 
 [node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("5_h7enf")]
+y_sort_enabled = true
 position = Vector2(-319, -200)
 next_scene = "res://scenes/main.tscn"
-player_spawn_position = Vector2(-320, -150)
+player_spawn_position = Vector2(-320, -180)

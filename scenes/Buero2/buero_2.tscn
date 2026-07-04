@@ -4,7 +4,52 @@
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="2_mkwh7"]
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="3_7yyin"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="4_2fosl"]
+[ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="4_coa5j"]
 [ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="5_jupeq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3q61n"]
+texture = ExtResource("4_coa5j")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+4:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+18:19/0 = 0
+19:19/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8y6yw"]
+sources/0 = SubResource("TileSetAtlasSource_3q61n")
 
 [node name="Node2D_Buero2" type="Node2D" unique_id=638616607]
 
@@ -38,6 +83,10 @@ tile_set = ExtResource("3_7yyin")
 tile_map_data = PackedByteArray("AAAOApf+AAAIAAAAAAASAtT+AAAJAAEAABA=")
 tile_set = ExtResource("3_7yyin")
 
+[node name="DetailsWand" type="TileMapLayer" parent="." unique_id=124222120]
+tile_map_data = PackedByteArray("AAANAOv/AAAKAAMAAAANAOz/AAAKAAQAAAANAO3/AAAKAAUAAAANAO7/AAAKAAYAAAANAO//AAAKAAcAAAAOAOv/AAALAAMAAAAOAOz/AAALAAQAAAAOAO3/AAALAAUAAAAOAO7/AAALAAYAAAAOAO//AAALAAcAAAA=")
+tile_set = SubResource("TileSet_8y6yw")
+
 [node name="Tag1_0" type="TileMapLayer" parent="." unique_id=252443834]
 tile_map_data = PackedByteArray("AAAPArj+AAADAAIAAAA=")
 tile_set = ExtResource("3_7yyin")
@@ -46,9 +95,9 @@ tile_set = ExtResource("3_7yyin")
 tile_set = ExtResource("3_7yyin")
 
 [node name="Player" parent="." unique_id=587769380 instance=ExtResource("4_2fosl")]
-position = Vector2(297, -325)
+position = Vector2(260, -315)
 
 [node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("5_jupeq")]
-position = Vector2(243, -306)
+position = Vector2(224, -299)
 next_scene = "res://scenes/main.tscn"
-player_spawn_position = Vector2(160, -170)
+player_spawn_position = Vector2(190, -90)
