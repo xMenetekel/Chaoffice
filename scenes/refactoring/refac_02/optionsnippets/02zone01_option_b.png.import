@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxner5l1h17jo"
-path="res://.godot/imported/wc-26ctuer.png-8c50eeeee41eae9fce1678b7c46a7a46.ctex"
+uid="uid://66f1xqo5rvt2"
+path="res://.godot/imported/02zone01_option_b.png-1380795aa5533cd1b50d38d27fcd9041.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/wc-26ctuer.png"
-dest_files=["res://.godot/imported/wc-26ctuer.png-8c50eeeee41eae9fce1678b7c46a7a46.ctex"]
+source_file="res://scenes/refactoring/refac_02/optionsnippets/02zone01_option_b.png"
+dest_files=["res://.godot/imported/02zone01_option_b.png-1380795aa5533cd1b50d38d27fcd9041.ctex"]
 
 [params]
 

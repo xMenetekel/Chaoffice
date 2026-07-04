@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://pwdkpcdq72u5" path="res://assets/godot/TileSets/biggriddy.tres" id="1_rnjyy"]
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="2_4dvvg"]
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="3_rnjyy"]
+[ext_resource type="PackedScene" uid="uid://c4jtfde5ysste" path="res://scenes/refactoring/refac_02/entry_raetsel.tscn" id="4_o7jhm"]
 [ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="4_o7jhm"]
 [ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="5_0nl5y"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="5_iplhh"]
@@ -51,7 +52,8 @@ texture = ExtResource("5_0nl5y")
 [sub_resource type="TileSet" id="TileSet_g2n35"]
 sources/0 = SubResource("TileSetAtlasSource_0rm07")
 
-[node name="Node2D" type="Node2D" unique_id=1867850265]
+[node name="Hauptraum" type="Node2D" unique_id=1867850265]
+position = Vector2(451, 622)
 
 [node name="Fußboden" type="TileMapLayer" parent="." unique_id=1176953806]
 position = Vector2(160, 190)
@@ -98,6 +100,9 @@ tile_set = ExtResource("2_4dvvg")
 tile_map_data = PackedByteArray("AAAfAAX/AAAEAAAAAAA=")
 tile_set = ExtResource("2_4dvvg")
 
+[node name="EntryRaetsel" parent="." unique_id=1943143851 instance=ExtResource("4_o7jhm")]
+position = Vector2(57, -371)
+
 [node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("4_o7jhm")]
 position = Vector2(-319, -196)
 player_spawn_position = Vector2(-319, -261)
@@ -120,6 +125,7 @@ player_spawn_position = Vector2(-225, 50)
 [node name="Node2D_KaffeeKueche" type="Node2D" parent="." unique_id=1911760368]
 
 [node name="Fußboden" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=1081659445]
+visible = false
 position = Vector2(160, 190)
 tile_map_data = PackedByteArray("AADu//T/AAAJAAAAAADu//X/AAAJAAAAAADu//b/AAAJAAAAAADv//T/AAAJAAAAAADv//X/AAAJAAAAAADv//b/AAAJAAAAAADw//T/AAAJAAAAAADw//X/AAAJAAAAAADw//b/AAAJAAAAAADx//T/AAAJAAAAAADx//X/AAAJAAAAAADx//b/AAAJAAAAAADy//T/AAAJAAAAAADy//X/AAAJAAAAAADy//b/AAAJAAAAAADz//T/AAAJAAAAAADz//X/AAAJAAAAAADz//b/AAAJAAAAAAD0//T/AAAJAAAAAAD0//X/AAAJAAAAAAD0//b/AAAJAAAAAAD1//T/AAAJAAAAAAD1//X/AAAJAAAAAAD1//b/AAAJAAAAAAD2//T/AAAJAAAAAAD2//X/AAAJAAAAAAD2//b/AAAJAAAAAAD3//T/AAAJAAAAAAD3//X/AAAJAAAAAAD3//b/AAAJAAAAAAD4//T/AAAJAAAAAAD4//X/AAAJAAAAAAD4//b/AAAJAAAAAAD5//X/AAAJAAAAAAD5//b/AAAJAAAAAAD5//T/AAAJAAAAAAA=")
 tile_set = ExtResource("1_rnjyy")

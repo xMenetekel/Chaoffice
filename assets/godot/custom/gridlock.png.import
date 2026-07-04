@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds08bb8wyyya7"
-path="res://.godot/imported/sprechblase.png-472010eb58862dc0fe3be399c60c1800.ctex"
+uid="uid://cmniy6r1axa6y"
+path="res://.godot/imported/gridlock.png-b52c2fbfafdf9788a124c83be34f1c15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/godot/sprechblase.png"
-dest_files=["res://.godot/imported/sprechblase.png-472010eb58862dc0fe3be399c60c1800.ctex"]
+source_file="res://assets/godot/custom/gridlock.png"
+dest_files=["res://.godot/imported/gridlock.png-b52c2fbfafdf9788a124c83be34f1c15.ctex"]
 
 [params]
 

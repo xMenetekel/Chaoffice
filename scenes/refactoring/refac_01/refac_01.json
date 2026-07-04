@@ -1,0 +1,49 @@
+{
+  "intro": ["Hmm .. am besten schau ich mir die lines of code an und markiere mir die Parts, die mir nicht gefallen."],
+  "phase_transition": ["Damit hab ich alle Code Smells gefunden! Über meine Markierung kann ich diesen Teil des Codes verbessern."],
+  "selection_feedback": {
+  "incomplete": ["Hmm hier stinkt noch was.."],
+  "option_confirm_prompt": ["Bist du sicher mit dieser Wahl?"],
+  "outro": ["Gut gemacht! Du hast alle Fehler gefunden."]
+},
+  "zones": {
+	"02zone01": {
+	  "options": {
+		"option_a": {
+		  "preview": ["Das könnte die Lösung sein, weil..."],
+		  "wrong": ["Nein, Option A war's nicht."],
+		  "correct": ["Ja, Option A war die richtige Lösung!"]
+		},
+		"option_b": {
+		  "preview": ["Dieser Ansatz würde..."],
+		  "wrong": ["Nein, Option B stimmt nicht."],
+		  "correct": ["Genau, Option B war richtig!"]
+		},
+		"option_c": {
+		  "preview": ["Hier würde man..."],
+		  "wrong": ["Nein, Option C ist falsch."],
+		  "correct": ["Richtig, Option C war die Lösung!"]
+		}
+	  }
+	},
+	"02zone03": {
+	  "options": {
+		"option_a": {
+		  "preview": ["Das könnte die Lösung sein, weil..."],
+		  "wrong": ["Nein, Option A war's nicht."],
+		  "correct": ["Ja, Option A !"]
+		},
+		"option_b": {
+		  "preview": ["Dieser Ansatz würde..."],
+		  "wrong": ["Nein, Option B stimmt nicht."],
+		  "correct": ["Genau, Option B !"]
+		},
+		"option_c": {
+		  "preview": ["Hier würde man..."],
+		  "wrong": ["Nein, Option C ist falsch."],
+		  "correct": ["Richtig, Option C war die Lösung!"]
+		}
+	  }
+	}
+  }
+}

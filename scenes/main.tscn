@@ -9,8 +9,8 @@
 [node name="DialogueUI" parent="." unique_id=1934225950 instance=ExtResource("2_0wfyh")]
 visible = false
 
-[node name="Node2D" parent="." unique_id=1867850265 instance=ExtResource("1_o5qli")]
-position = Vector2(686, 579)
+[node name="Hauptraum" parent="." unique_id=1867850265 instance=ExtResource("1_o5qli")]
+position = Vector2(596, 589)
 
 [node name="Player" parent="." unique_id=587769380 instance=ExtResource("3_sugp2")]
-position = Vector2(321, 575)
+position = Vector2(586, 286)
