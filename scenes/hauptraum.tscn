@@ -3,10 +3,12 @@
 [ext_resource type="TileSet" uid="uid://pwdkpcdq72u5" path="res://assets/godot/TileSets/biggriddy.tres" id="1_rnjyy"]
 [ext_resource type="TileSet" uid="uid://bno81k40jmpsk" path="res://assets/godot/TileSets/assets_klein.tres" id="2_4dvvg"]
 [ext_resource type="TileSet" uid="uid://ci1fklfqmpvxf" path="res://assets/godot/TileSets/grosseDingeKleinadjustierbar.tres" id="3_rnjyy"]
-[ext_resource type="PackedScene" uid="uid://c4jtfde5ysste" path="res://scenes/refactoring/refac_02/entry_raetsel.tscn" id="4_o7jhm"]
+[ext_resource type="PackedScene" uid="uid://c4jtfde5ysste" path="res://scenes/refactoring/refac_02/entry_raetsel.tscn" id="4_0rm07"]
 [ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="4_o7jhm"]
 [ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="5_0nl5y"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="5_iplhh"]
+[ext_resource type="PackedScene" uid="uid://dvsckbry7o2iu" path="res://scenes/npcs/Annegret.tscn" id="8_g8jxj"]
+[ext_resource type="PackedScene" uid="uid://bx3ndx71r2qdp" path="res://scenes/npcs/Cornelia.tscn" id="9_7ps27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rm07"]
 texture = ExtResource("5_0nl5y")
@@ -53,7 +55,6 @@ texture = ExtResource("5_0nl5y")
 sources/0 = SubResource("TileSetAtlasSource_0rm07")
 
 [node name="Hauptraum" type="Node2D" unique_id=1867850265]
-position = Vector2(451, 622)
 
 [node name="Fußboden" type="TileMapLayer" parent="." unique_id=1176953806]
 position = Vector2(160, 190)
@@ -100,7 +101,7 @@ tile_set = ExtResource("2_4dvvg")
 tile_map_data = PackedByteArray("AAAfAAX/AAAEAAAAAAA=")
 tile_set = ExtResource("2_4dvvg")
 
-[node name="EntryRaetsel" parent="." unique_id=1943143851 instance=ExtResource("4_o7jhm")]
+[node name="EntryRaetsel" parent="." unique_id=1943143851 instance=ExtResource("4_0rm07")]
 position = Vector2(57, -371)
 
 [node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("4_o7jhm")]
@@ -162,6 +163,14 @@ tile_set = ExtResource("2_4dvvg")
 
 [node name="Tag1_1" type="TileMapLayer" parent="Node2D_KaffeeKueche" unique_id=997875736]
 tile_set = ExtResource("2_4dvvg")
+
+[node name="Annegret" parent="." unique_id=1139556431 instance=ExtResource("8_g8jxj")]
+y_sort_enabled = true
+position = Vector2(-27, -328)
+
+[node name="Cornelia" parent="." unique_id=208567459 instance=ExtResource("9_7ps27")]
+y_sort_enabled = true
+position = Vector2(160, -326)
 
 [node name="Player" parent="." unique_id=587769380 instance=ExtResource("5_iplhh")]
 y_sort_enabled = true
