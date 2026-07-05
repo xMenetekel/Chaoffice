@@ -76,12 +76,25 @@ public partial class RefactorExample : Node2D
     }
     
     
-
-
     public void CalculatePlayerPosition()
     {
-        float z = (float)(a + b) / (x * y);
         var enemy = GetNode<Enemy>("Enemy");
-        enemy.Speed = z * 10;
+        enemy.Speed = speed_multiplier * 10;
+    }
+    
+    public void CalculatePlayerPosition()
+    {
+        float speed_multiplier = (float)(speed_offset + base_speed) 
+                                 / (per_pixel_offset * speed_per_pixel);
+        var enemy = GetNode<Enemy>("Enemy");
+        enemy.Speed = speed_multiplier * 10;
+    }  
+    
+    public void CalculatePlayerPosition()
+    {
+        float speed_multiplier = (float)(numbers[0] + numbers[1] ) 
+                                 / (numbers[2]  * numbers[3] );
+        var enemy = GetNode<Enemy>("Enemy");
+        enemy.Speed = speed_multiplier * 10;
     }
 }

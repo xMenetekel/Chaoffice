@@ -38,7 +38,7 @@ anchor_top = 0.056
 anchor_bottom = 0.164
 offset_left = -2.0
 offset_top = -33.288002
-offset_right = 65.31995
+offset_right = 140.31995
 offset_bottom = 34.727997
 zone_id = "02zone01"
 
@@ -49,7 +49,7 @@ anchor_right = 0.42900002
 anchor_bottom = 0.287
 offset_left = 1.0
 offset_top = 28.895996
-offset_right = 106.79199
+offset_right = 171.79199
 offset_bottom = 59.024002
 zone_id = "02zone02"
 
@@ -60,7 +60,7 @@ anchor_top = 0.312
 anchor_bottom = 0.42900002
 offset_left = 0.84799993
 offset_top = 42.82399
-offset_right = 73.31995
+offset_right = 131.31995
 offset_bottom = 110.007996
 zone_id = "02zone03"
 
@@ -75,7 +75,7 @@ offset_bottom = 1.0
 correct_option_by_zone = {
 "02zone01": "option_a",
 "02zone02": "option_b",
-"02zone03": ["option_b", "option_c"]
+"02zone03": "option_a"
 }
 
 [node name="ConfirmButton" parent="." unique_id=819249123 instance=ExtResource("6_vutnj")]
