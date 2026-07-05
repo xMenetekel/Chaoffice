@@ -10,17 +10,36 @@
 	"02zone01": {
 	  "options": {
 		"option_a": {
-		  "preview": ["Das könnte die Lösung sein, weil..."],
+		  "preview": ["Das könnte die Lösung sein, wenn ich weiter die Berechnung da unten nicht machen möchte."],
 		  "wrong": ["Nein, Option A war's nicht."],
-		  "correct": ["Ja, Option A war die richtige Lösung!"]
+		  "correct": ["Ja, das sieht richtig aus; eine Konstante bei der man direkt sieht wofür sie gedacht ist."]
 		},
 		"option_b": {
-		  "preview": ["Dieser Ansatz würde..."],
-		  "wrong": ["Nein, Option B stimmt nicht."],
+		  "preview": ["Bei diesem Ansatz sind die Variabeln korrekt benannt."],
+		  "wrong": ["Schon korrekt benannt, aber es sollte doch auch einfacher gehen. Insbesonders, wenn base_speed und speed_per_pixel eh nicht allgemeingültig ist."],
 		  "correct": ["Genau, Option B war richtig!"]
 		},
 		"option_c": {
-		  "preview": ["Hier würde man..."],
+		  "preview": ["Die Variabeln waren eh nicht ordentlich benannt, dann kann man sie auch in ein Array schreiben."],
+		  "wrong": ["Nee, das ist es nicht. Hier versteht man ja noch weniger, was die Zahlen ausdrücken sollen."],
+		  "correct": ["Richtig, Option C war die Lösung!"]
+		}
+	  }
+	},
+	"02zone02": {
+	  "options": {
+		"option_a": {
+		  "preview": ["Der Funktionskörper scheint etwas mit Geschwindigkeit zu tun zu haben..."],
+		  "wrong": ["Nein, Option A war's nicht."],
+		  "correct": ["Ja, Option A !"]
+		},
+		"option_b": {
+		  "preview": ["Ich greife in dem Funktionskörper auf die Daten von oben und die Enemy Node zu."],
+		  "wrong": ["Nein, Option B stimmt nicht."],
+		  "correct": ["Genau, Option B !"]
+		},
+		"option_c": {
+		  "preview": ["Der Funktionskörper scheint etwas mit einer Enemy Node zu machen..."],
 		  "wrong": ["Nein, Option C ist falsch."],
 		  "correct": ["Richtig, Option C war die Lösung!"]
 		}
