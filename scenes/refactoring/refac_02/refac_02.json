@@ -48,18 +48,18 @@
 	"02zone03": {
 	  "options": {
 		"option_a": {
-		  "preview": ["Das könnte die Lösung sein, weil..."],
+		  "preview": ["Wenn ich also oben eine Konstante speed_multiplier einführe..."],
 		  "wrong": ["Nein, Option A war's nicht."],
-		  "correct": ["Ja, Option A !"]
+		  "correct": ["Ja, das ist es! Einfach zu lesen was hier berechnet wird."]
 		},
 		"option_b": {
-		  "preview": ["Dieser Ansatz würde..."],
-		  "wrong": ["Nein, Option B stimmt nicht."],
+		  "preview": ["Ich übernehme die neuen Variabelnamen in meine Funktion."],
+		  "wrong": ["Das ist nicht notwendigerweise falsch, aber hier ist das viel zu überzogen. Einfach ist elegant."],
 		  "correct": ["Genau, Option B !"]
 		},
 		"option_c": {
-		  "preview": ["Hier würde man..."],
-		  "wrong": ["Nein, Option C ist falsch."],
+		  "preview": ["Die Zahlen aus dem Array in die Berechnung einfließen lasse und ..."],
+		  "wrong": ["Phantastisch, nun weiß wirklich niemand mehr was hier berechnet wird!"],
 		  "correct": ["Richtig, Option C war die Lösung!"]
 		}
 	  }
