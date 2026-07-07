@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cu4k6nr151l25" path="res://assets/godot/custom/placeholder.png" id="2_vutnj"]
 [ext_resource type="PackedScene" uid="uid://55r60w2ullo" path="res://scenes/refactoring/options_panel.tscn" id="3_ayffu"]
 [ext_resource type="PackedScene" uid="uid://dtukgwyux8afi" path="res://scenes/refactoring/confirm_button.tscn" id="6_vutnj"]
-[ext_resource type="PackedScene" uid="uid://b0tck8h62kfme" path="res://scenes/refactoring/hint_button.tscn" id="7_kbgim"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vutnj"]
 atlas = ExtResource("2_vutnj")
@@ -81,12 +80,3 @@ offset_left = 880.0
 offset_top = 7.0
 offset_right = -9.0
 offset_bottom = -537.0
-
-[node name="HintButton" parent="." unique_id=1905066209 instance=ExtResource("7_kbgim")]
-layout_mode = 1
-offset_left = 880.0
-offset_top = 103.0
-offset_right = 880.104
-offset_bottom = 103.096
-grow_horizontal = 1
-grow_vertical = 1
