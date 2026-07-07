@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="4_a1wnp"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="4_d4d15"]
 [ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="5_lhei4"]
+[ext_resource type="PackedScene" uid="uid://dgybj7npmq15r" path="res://scenes/npcs/Mike_Gefaengnis.tscn" id="7_0buxr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0buxr"]
 texture = ExtResource("4_a1wnp")
@@ -100,3 +101,7 @@ position = Vector2(260, -525)
 position = Vector2(225, -507)
 next_scene = "res://scenes/main.tscn"
 player_spawn_position = Vector2(190, -505)
+
+[node name="Mike_Gefaengnis" parent="." unique_id=1139556431 instance=ExtResource("7_0buxr")]
+position = Vector2(501, -516)
+scale = Vector2(-1, 1)

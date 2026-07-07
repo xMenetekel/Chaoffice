@@ -5,6 +5,7 @@
 [ext_resource type="TileSet" uid="uid://pwdkpcdq72u5" path="res://assets/godot/TileSets/biggriddy.tres" id="2_oatf1"]
 [ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="4_gf68m"]
 [ext_resource type="TileSet" uid="uid://dc1a8sskrr7og" path="res://assets/godot/TileSets/kleinWC_immernoch.tres" id="4_vb7wp"]
+[ext_resource type="PackedScene" uid="uid://d1roif1c0o46" path="res://scenes/npcs/Man_Greasley.tscn" id="5_6bn5j"]
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="6_6bn5j"]
 [ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="7_lx1b7"]
 
@@ -69,6 +70,9 @@ tile_set = ExtResource("2_fcwt6")
 [node name="WandDetails" type="TileMapLayer" parent="." unique_id=1972709606]
 tile_map_data = PackedByteArray("AADv/wIAAAAKAAMAAADv/wMAAAAKAAQAAADv/wQAAAAKAAUAAADv/wUAAAAKAAYAAADv/wYAAAAKAAcAAADw/wIAAAALAAMAAADw/wMAAAALAAQAAADw/wQAAAALAAUAAADw/wUAAAALAAYAAADw/wYAAAALAAcAAAA=")
 tile_set = SubResource("TileSet_fo8ww")
+
+[node name="Man_Greasley" parent="." unique_id=1139556431 instance=ExtResource("5_6bn5j")]
+position = Vector2(-113, 6)
 
 [node name="Tag1" type="TileMapLayer" parent="." unique_id=296391505]
 tile_map_data = PackedByteArray("AADv/w4AAAACAAAAAADQ/w4AAAACAAAAAACw/w4AAAACAAAAAABx/xcAAAAGAAEAAAB1/yUAAAAGAAEAAACz/ysAAAAGAAEAAADx/1sAAAAGAAEAAAA=")

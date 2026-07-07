@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cqkrk4apjwft3" path="res://scenes/npcs/base_npc.tscn" id="1_7ugb8"]
 [ext_resource type="Script" uid="uid://0w4pwrg5u02l" path="res://scenes/npcs/base_npc.gd" id="2_pk4w1"]
 [ext_resource type="Texture2D" uid="uid://kjbk5s25mrw0" path="res://assets/godot/walkingHumans/menschpreset.png" id="3_kr4ka"]
+[ext_resource type="Texture2D" uid="uid://50tkxjr86tol" path="res://assets/godot/walkingHumans/man_walking.png" id="4_pk4w1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gqjuk"]
 atlas = ExtResource("3_kr4ka")
@@ -71,6 +72,10 @@ region = Rect2(320, 0, 64, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_aciub"]
 atlas = ExtResource("3_kr4ka")
 region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kr4ka"]
+atlas = ExtResource("4_pk4w1")
+region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sdin7"]
 animations = [{
@@ -149,6 +154,14 @@ animations = [{
 "loop": true,
 "name": &"move_up",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kr4ka")
+}],
+"loop": true,
+"name": &"sitting",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_408yk"]
@@ -162,6 +175,7 @@ npc_name = "Man Greasley"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0" unique_id=850347401]
 sprite_frames = SubResource("SpriteFrames_sdin7")
+animation = &"sitting"
 
 [node name="CollisionShape2D" parent="." index="2" unique_id=1308473348]
 shape = SubResource("CapsuleShape2D_408yk")

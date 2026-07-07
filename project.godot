@@ -22,6 +22,10 @@ DialogueManager="*uid://2icjrp3tebon"
 PlayerLocation="*res://scripts/autoload/player_location.gd"
 RaetselManager="*uid://bgbaaxxorno2j"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [dotnet]
 
 project/assembly_name="Godot Chaoffice Working Title"

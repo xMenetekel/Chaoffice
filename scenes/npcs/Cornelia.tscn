@@ -73,6 +73,10 @@ region = Rect2(320, 0, 64, 64)
 atlas = ExtResource("3_hiehp")
 region = Rect2(320, 64, 64, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb0wa"]
+atlas = ExtResource("3_gb0wa")
+region = Rect2(0, 0, 64, 64)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_sdin7"]
 animations = [{
 "frames": [{
@@ -150,6 +154,14 @@ animations = [{
 "loop": true,
 "name": &"move_up",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb0wa")
+}],
+"loop": true,
+"name": &"sitting",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_408yk"]
@@ -163,6 +175,7 @@ npc_name = "Cornelia"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0" unique_id=850347401]
 sprite_frames = SubResource("SpriteFrames_sdin7")
+animation = &"sitting"
 
 [node name="CollisionShape2D" parent="." index="2" unique_id=1308473348]
 shape = SubResource("CapsuleShape2D_408yk")

@@ -8,7 +8,7 @@ atlas = ExtResource("1_a767o")
 region = Rect2(1, 257.5, 30, 30)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fmrny"]
-radius = 48.04165
+radius = 40.012497
 
 [node name="EntryRaetsel" type="Area2D" unique_id=1943143851]
 script = ExtResource("1_4fd31")
@@ -17,4 +17,5 @@ script = ExtResource("1_4fd31")
 texture = SubResource("AtlasTexture_4fd31")
 
 [node name="InteractionRange" type="CollisionShape2D" parent="." unique_id=689432767]
+position = Vector2(1, 19)
 shape = SubResource("CircleShape2D_fmrny")

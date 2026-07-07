@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cqkrk4apjwft3" path="res://scenes/npcs/base_npc.tscn" id="1_h6ywt"]
 [ext_resource type="Script" uid="uid://0w4pwrg5u02l" path="res://scenes/npcs/base_npc.gd" id="2_2ps6j"]
 [ext_resource type="Texture2D" uid="uid://kjbk5s25mrw0" path="res://assets/godot/walkingHumans/menschpreset.png" id="3_2s6n2"]
+[ext_resource type="Texture2D" uid="uid://bx2ro4w8elxac" path="res://assets/godot/walkingHumans/mike_walking.png" id="4_2ps6j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gqjuk"]
 atlas = ExtResource("3_2s6n2")
@@ -71,6 +72,10 @@ region = Rect2(320, 0, 64, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_aciub"]
 atlas = ExtResource("3_2s6n2")
 region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2s6n2"]
+atlas = ExtResource("4_2ps6j")
+region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sdin7"]
 animations = [{
@@ -149,6 +154,14 @@ animations = [{
 "loop": true,
 "name": &"move_up",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2s6n2")
+}],
+"loop": true,
+"name": &"sittin",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_408yk"]
@@ -162,6 +175,7 @@ npc_name = "Mike Gefaengnis"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0" unique_id=850347401]
 sprite_frames = SubResource("SpriteFrames_sdin7")
+animation = &"sittin"
 
 [node name="CollisionShape2D" parent="." index="2" unique_id=1308473348]
 shape = SubResource("CapsuleShape2D_408yk")

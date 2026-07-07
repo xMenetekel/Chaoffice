@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cqkrk4apjwft3" path="res://scenes/npcs/base_npc.tscn" id="1_p3ysv"]
 [ext_resource type="Script" uid="uid://0w4pwrg5u02l" path="res://scenes/npcs/base_npc.gd" id="2_e8x88"]
 [ext_resource type="Texture2D" uid="uid://kjbk5s25mrw0" path="res://assets/godot/walkingHumans/menschpreset.png" id="3_m41ad"]
+[ext_resource type="Texture2D" uid="uid://bkrr3abww204v" path="res://assets/godot/walkingHumans/steffi_walking.png" id="4_e8x88"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gqjuk"]
 atlas = ExtResource("3_m41ad")
@@ -71,6 +72,10 @@ region = Rect2(320, 0, 64, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_aciub"]
 atlas = ExtResource("3_m41ad")
 region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m41ad"]
+atlas = ExtResource("4_e8x88")
+region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sdin7"]
 animations = [{
@@ -149,6 +154,14 @@ animations = [{
 "loop": true,
 "name": &"move_up",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m41ad")
+}],
+"loop": true,
+"name": &"sitting",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_408yk"]
@@ -162,6 +175,7 @@ npc_name = "Steffi"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0" unique_id=850347401]
 sprite_frames = SubResource("SpriteFrames_sdin7")
+animation = &"sitting"
 
 [node name="CollisionShape2D" parent="." index="2" unique_id=1308473348]
 shape = SubResource("CapsuleShape2D_408yk")
