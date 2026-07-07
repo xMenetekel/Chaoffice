@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dvjy4cq052cka" path="res://scenes/Player/player.tscn" id="4_2fosl"]
 [ext_resource type="Texture2D" uid="uid://djojqaghq65bk" path="res://assets/godot/textures2.png" id="4_coa5j"]
 [ext_resource type="PackedScene" uid="uid://cfka6qvqje5em" path="res://scenes/Tür/tür.tscn" id="5_jupeq"]
+[ext_resource type="PackedScene" uid="uid://43532c2mn0lx" path="res://scenes/npcs/Lemmy.tscn" id="7_3q61n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3q61n"]
 texture = ExtResource("4_coa5j")
@@ -72,7 +73,7 @@ tile_map_data = PackedByteArray("AAC4Abj+AAAAAAQAAAC4AdX+AAAAAAYAAADYAbj+AAABAAQ
 tile_set = ExtResource("3_7yyin")
 
 [node name="DetailsAndereGroesse_0" type="TileMapLayer" parent="." unique_id=522765036]
-tile_map_data = PackedByteArray("AADzAJX+AAAIAAgAAABtAXH+AAADAAEAAAB/AWT+AAACAAMAAACAAZT+AAADAAMAABCJAXz+AAACAAMAABCZAdH+AAAAAAcAAACnAV/+AAADAAIAAACqAVr+AAADAAIAAACrAXz+AAADAAMAAACsAZT+AAACAAMAABC0Aaz+AAAJAAAAAAC0AbX+AAACAAgAABC4AZL+AAAEAAIAAAC7AXz+AAADAAMAABC+AWH+AAAAAAEAAAC/AZL+AAAEAAIAAADGAZL+AAAEAAIAAADHAdb+AAAIAAQAAADSAbb+AAACAAcAAADSAbf+AAACAAcAAADTAaf+AAABAAcAAADZAXz+AAAEAAEAAADaAWX+AAACAAMAAADgAXz+AAAEAAEAAADkAZT+AAACAAMAABDnAXz+AAAEAAEAAADxAbj+AAACAAgAAAD2Adj+AAAIAAQAAAD4Abf+AAACAAkAAAA=")
+tile_map_data = PackedByteArray("AADzAJX+AAAIAAgAAABtAXH+AAADAAEAAAB/AWT+AAACAAMAAACAAZT+AAADAAMAABCJAXz+AAACAAMAABCZAdH+AAAAAAcAAACnAV/+AAADAAIAAACqAVr+AAADAAIAAACrAXz+AAADAAMAAACsAZT+AAACAAMAABC0Aaz+AAAJAAAAAAC0AbX+AAACAAgAABC4AZL+AAAEAAIAAAC7AXz+AAADAAMAABC+AWH+AAAAAAEAAAC/AZL+AAAEAAIAAADGAZL+AAAEAAIAAADSAbb+AAACAAcAAADSAbf+AAACAAcAAADTAaf+AAABAAcAAADZAXz+AAAEAAEAAADaAWX+AAACAAMAAADgAXz+AAAEAAEAAADkAZT+AAACAAMAABDnAXz+AAAEAAEAAADxAbj+AAACAAgAAAD4Abf+AAACAAkAAADIAd7+AAAIAAQAAAD3AeD+AAAIAAQAAAA=")
 tile_set = ExtResource("3_7yyin")
 
 [node name="DetailsAndereGroesse_1" type="TileMapLayer" parent="." unique_id=1299180921]
@@ -101,3 +102,6 @@ position = Vector2(260, -315)
 position = Vector2(224, -299)
 next_scene = "res://scenes/main.tscn"
 player_spawn_position = Vector2(190, -90)
+
+[node name="Lemmy" parent="." unique_id=1139556431 instance=ExtResource("7_3q61n")]
+position = Vector2(319, -357)
