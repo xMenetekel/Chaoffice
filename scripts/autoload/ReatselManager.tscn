@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dy1qah3e8dx2b"]
+
+[ext_resource type="Script" uid="uid://bgbaaxxorno2j" path="res://scripts/autoload/reatsel_manager.gd" id="1_wyleq"]
+
+[node name="ReatselManager" type="Node2D" unique_id=895739447]
+script = ExtResource("1_wyleq")

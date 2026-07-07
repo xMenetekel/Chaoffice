@@ -1,8 +1,8 @@
 extends Area2D
 class_name EntryRaetsel 
 
-@export var puzzle_scene_path: String = "res://scenes/refactoring/refac_02/refac02.tscn"
-@export var puzzle_id: String = "refac_02"
+var puzzle_scene_path: String 
+var puzzle_id: String 
 
 var player_nearby: bool = false
 
@@ -36,8 +36,12 @@ func _open_puzzle() -> void:
 
 func _on_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
-		print("body etnered")
+		print("body entered")
 		player_nearby = true
+		puzzle_scene_path = RaetselManager.naechstes_raetsel
+		puzzle_id = RaetselManager.naechste_puzzle_id
+		print("puzzle_id: ", puzzle_id)
+		print("completed flag: ", GameState.get_flag(puzzle_id + "_completed"))
 
 func _on_body_exited(body: Node) -> void:
 	if body.is_in_group("player"):
