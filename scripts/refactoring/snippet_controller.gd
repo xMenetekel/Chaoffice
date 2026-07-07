@@ -8,7 +8,6 @@ class_name SnippetController
 @onready var confirm_button: TextureButton = $ConfirmButton
 @onready var options_panel: OptionsPanel = $OptionsPanel
 @onready var dialogue_ui: DialogueUI = $DialogueUI
-@onready var hint_button: TextureButton = $HintButton
 
 var zones: Array[ClickZone] = []
 var _phase: int = 1
@@ -17,8 +16,6 @@ var _attempt_count: Dictionary = {}
 var _monologue_data: Dictionary = {}
 var _intro_shown: bool = false
 var _pending_option_id: String = ""
-var _confirm_attempts: int = 0
-var _hint_shown: bool = false
 
 func _ready() -> void:
 	_monologue_data = _load_monologue_data()
@@ -27,17 +24,9 @@ func _ready() -> void:
 	var hover_rect: ColorRect = confirm_button.get_node("HoverRect")
 	hover_rect.color = Color(1, 1, 1, 0.3)
 	hover_rect.visible = false
+	
 	confirm_button.mouse_entered.connect(func(): hover_rect.visible = true)
 	confirm_button.mouse_exited.connect(func(): hover_rect.visible = false)
-
-	var hint_hover_rect: ColorRect = hint_button.get_node("HoverRect")
-	hint_hover_rect.color = Color(1, 1, 1, 0.3)
-	hint_hover_rect.visible = false
-	hint_button.mouse_entered.connect(func(): hint_hover_rect.visible = true)
-	hint_button.mouse_exited.connect(func(): hint_hover_rect.visible = false)
-
-	hint_button.visible = false
-	hint_button.pressed.connect(_on_hint_pressed)
 
 	for child in get_tree().get_nodes_in_group("click_zones"):
 		if child is ClickZone:
@@ -89,34 +78,12 @@ func _on_confirm_pressed() -> void:
 			selected_ids.append(zone.zone_id)
 
 	if _selection_matches_correct(selected_ids):
-		hint_button.visible = false
 		await _show_phase_transition()
 		_advance_to_phase_2(selected_ids)
+	elif _is_subset_of_correct(selected_ids):
+		_show_selection_feedback("incomplete")
 	else:
-		_confirm_attempts += 1
-		if _confirm_attempts >= 3 and not _hint_shown:
-			_hint_shown = true
-			await _show_hint_dialogue()
-			hint_button.visible = true
-		elif _is_subset_of_correct(selected_ids):
-			_show_selection_feedback("incomplete")
-		else:
-			_show_selection_feedback("incomplete")
-
-func _show_hint_dialogue() -> void:
-	DialogueManager.show_monologue(["Mhhh ..  ich könnte mir sagen lassen, was refactored werden muss."])
-	await DialogueManager.dialogue_finished
-
-func _on_hint_pressed() -> void:
-	for zone in zones:
-		GameState.set_flag(zone.zone_id + "_selected", false)
-	for id in correct_zone_ids:
-		GameState.set_flag(id + "_selected", true)
-	for zone in zones:
-		zone._refresh_flags()
-	await _show_phase_transition()
-	hint_button.visible = false
-	_advance_to_phase_2(correct_zone_ids)
+		_show_selection_feedback("wrong")
 
 func _show_selection_feedback(feedback_type: String) -> void:
 	var lines: Array = _monologue_data.get("selection_feedback", {}).get(feedback_type, ["..."])
@@ -141,7 +108,6 @@ func _is_subset_of_correct(selected_ids: Array[String]) -> bool:
 func _advance_to_phase_2(selected_ids: Array[String]) -> void:
 	_phase = 2
 	confirm_button.visible = false
-	hint_button.visible = false
 
 	for zone in zones:
 		if zone.zone_id in selected_ids:
@@ -149,10 +115,11 @@ func _advance_to_phase_2(selected_ids: Array[String]) -> void:
 		else:
 			zone.lock_selection()
 
+
 func _on_flag_clicked(zone_id: String) -> void:
 	if _phase != 2:
 		return
-
+	
 	if _active_zone_id != "" and _active_zone_id != zone_id:
 		_get_zone(_active_zone_id).set_permahighlight(false)
 
@@ -160,7 +127,7 @@ func _on_flag_clicked(zone_id: String) -> void:
 	_get_zone(zone_id).set_permahighlight(true)
 	var asset_dir: String = scene_file_path.get_base_dir().path_join("optionsnippets")
 	dialogue_ui.keep_visible_after_finish = true
-	dialogue_ui.visible = false
+	dialogue_ui.visible = false 
 	dialogue_ui.set_refactor_option_mode()
 	options_panel.open_for(zone_id, asset_dir)
 
@@ -177,14 +144,14 @@ func _on_card_selected(option_id: String) -> void:
 	if preview_lines == null:
 		preview_lines = ["..."]
 	DialogueManager.cancel_dialogue()
-	dialogue_ui.hide_confirm_button()
+	dialogue_ui.hide_confirm_button() 
 	await get_tree().process_frame
 	DialogueManager.show_monologue(preview_lines)
 	dialogue_ui.show_confirm_button()
 
 func _on_option_confirmed() -> void:
 	DialogueManager.cancel_dialogue()
-	await get_tree().process_frame
+	await get_tree().process_frame 
 	if options_panel.evaluate_pending():
 		_on_option_correct()
 	else:
@@ -248,6 +215,7 @@ func _show_outro() -> void:
 		lines = ["..."]
 	DialogueManager.show_monologue(lines)
 	await DialogueManager.dialogue_finished
+
 
 func _return_to_main() -> void:
 	GameState.set_flag(snippet_id + "_completed", true)
