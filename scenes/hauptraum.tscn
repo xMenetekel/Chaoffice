@@ -103,6 +103,8 @@ tile_set = ExtResource("2_4dvvg")
 
 [node name="EntryRaetsel" parent="." unique_id=1943143851 instance=ExtResource("4_0rm07")]
 position = Vector2(57, -371)
+puzzle_scene_path = "res://scenes/refactoring/refac_01/refac01.tscn"
+puzzle_id = "refac_01"
 
 [node name="Tür" parent="." unique_id=1381082330 instance=ExtResource("4_o7jhm")]
 position = Vector2(-319, -196)

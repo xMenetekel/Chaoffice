@@ -19,7 +19,7 @@ var _pending_option_id: String = ""
 
 func _ready() -> void:
 	_monologue_data = _load_monologue_data()
-	dialogue_ui.allow_fast_forward = false #auskommentieren für dev
+	#dialogue_ui.allow_fast_forward = false #auskommentieren für dev
 	
 	var hover_rect: ColorRect = confirm_button.get_node("HoverRect")
 	hover_rect.color = Color(1, 1, 1, 0.3)
