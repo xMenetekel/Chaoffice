@@ -1,49 +1,95 @@
 {
-  "intro": ["Hmm .. am besten schau ich mir die lines of code an und markiere mir die Parts, die mir nicht gefallen."],
-  "phase_transition": ["Damit hab ich alle Code Smells gefunden! Über meine Markierung kann ich diesen Teil des Codes verbessern."],
-  "selection_feedback": {
-	  "incomplete": ["Hmm hier stinkt noch was.."],
-	  "option_confirm_prompt": ["Bist du sicher mit dieser Wahl?"],
- 	},	
-	"outro":["Ich habe alle Fehler gefunden! Das war produktiv. Jetzt kann ich mich weiter den anderen Aufgaben widmen..."],
-  "zones": {
-	"01zone01": {
-	  "options": {
-		"option_a": {
-		  "preview": ["Das könnte die Lösung sein, weil man gleich dazu kommentiert, wofür die Variablen stehen."],
-		  "wrong": ["Doch nicht. Vielleicht ist es nutzlos, Kommentare zu schreiben, die man bereits über Namen ausdrücken kann."],
-		  "correct": ["Ja, Option A war die richtige Lösung!"]
-		},
-		"option_b": {
-		  "preview": ["Dieser Ansatz würde die Variablen zu dem benennen, wofür sie auch stehen."],
-		  "wrong": ["Nein, Option B stimmt nicht."],
-		  "correct": ["Genau, das macht total viel Sinn!"]
-		},
-		"option_c": {
-		  "preview": ["Vielleicht macht es Sinn, unaussagekräftige Variablen mit Fachwörtern auszustatten."],
-		  "wrong": ["Nein, das ergibt keinen Sinn."],
-		  "correct": ["Richtig, Option C war die Lösung!"]
-		}
-	  }
+	"intro": [
+		"Hmm .. am besten schau ich mir die lines of code an und markiere mir die Parts, die mir nicht gefallen."
+	],
+	"phase_transition": [
+		"Damit hab ich alle Code Smells gefunden! Über meine Markierung kann ich diesen Teil des Codes verbessern."
+	],
+	"selection_feedback": {
+		"incomplete": [
+			"Hmm hier stinkt noch was.."
+		],
+		"option_confirm_prompt": [
+			"Bist du sicher mit dieser Wahl?"
+		]
 	},
-	"01zone03": {
-	  "options": {
-		"option_a": {
-		  "preview": ["Wir lassen keine Magic Numbers entstehen, sondern definieren sie in einer config file oder ähnlichem."],
-		  "wrong": ["Nein, Option A war's nicht."],
-		  "correct": ["Ja, das ergibt Sinn! Alles zentrale wird an einem Ort gespeichert."]
+	"outro": [
+		"Ich habe alle Fehler gefunden! Das war produktiv. Jetzt kann ich mich weiter den anderen Aufgaben widmen..."
+	],
+	"zones": {
+		"01zone01": {
+			"options": {
+				"option_a": {
+					"preview": [
+						"Das könnte die Lösung sein, weil man gleich dazu kommentiert, wofür die Variablen stehen."
+					],
+					"wrong": [
+						"Doch nicht. Vielleicht ist es nutzlos, Kommentare zu schreiben, die man bereits über Namen ausdrücken kann."
+					],
+					"correct": [
+						"Ja, Option A war die richtige Lösung!"
+					]
+				},
+				"option_b": {
+					"preview": [
+						"Dieser Ansatz würde die Variablen zu dem benennen, wofür sie auch stehen."
+					],
+					"wrong": [
+						"Nein, Option B stimmt nicht."
+					],
+					"correct": [
+						"Genau, das macht total viel Sinn!"
+					]
+				},
+				"option_c": {
+					"preview": [
+						"Vielleicht macht es Sinn, unaussagekräftige Variablen mit Fachwörtern auszustatten."
+					],
+					"wrong": [
+						"Nein, das ergibt keinen Sinn."
+					],
+					"correct": [
+						"Richtig, Option C war die Lösung!"
+					]
+				}
+			}
 		},
-		"option_b": {
-		  "preview": ["Wir definieren einfach eine Variable für alle Berechnungen, um Speicherplatz zu sparen."],
-		  "wrong": ["Oh, wir müssen ja differenzieren, was wir berechnen wollen!"],
-		  "correct": ["Genau, Option B !"]
-		},
-		"option_c": {
-		  "preview": ["Wir kommentieren zu den Zahlen, wieso sie dort stehen."],
-		  "wrong": ["Das macht Sinn, aber das Buch Clean Code empfiehlt, dass man lieber Variablen aussagekräftig bennen soll."],
-		  "correct": ["Richtig, Option C war die Lösung!"]
+		"01zone03": {
+			"options": {
+				"option_a": {
+					"preview": [
+						"Wir lassen keine Magic Numbers entstehen, sondern definieren sie in einer config file oder ähnlichem."
+					],
+					"wrong": [
+						"Nein, Option A war's nicht."
+					],
+					"correct": [
+						"Ja, das ergibt Sinn! Alles zentrale wird an einem Ort gespeichert."
+					]
+				},
+				"option_b": {
+					"preview": [
+						"Wir definieren einfach eine Variable für alle Berechnungen, um Speicherplatz zu sparen."
+					],
+					"wrong": [
+						"Oh, wir müssen ja differenzieren, was wir berechnen wollen!"
+					],
+					"correct": [
+						"Genau, Option B !"
+					]
+				},
+				"option_c": {
+					"preview": [
+						"Wir kommentieren zu den Zahlen, wieso sie dort stehen."
+					],
+					"wrong": [
+						"Das macht Sinn, aber das Buch Clean Code empfiehlt, dass man lieber Variablen aussagekräftig bennen soll."
+					],
+					"correct": [
+						"Richtig, Option C war die Lösung!"
+					]
+				}
+			}
 		}
-	  }
 	}
-  }
 }
