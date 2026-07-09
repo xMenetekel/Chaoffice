@@ -8,6 +8,7 @@ class_name SnippetController
 @onready var confirm_button: TextureButton = $ConfirmButton
 @onready var options_panel: OptionsPanel = $OptionsPanel
 @onready var dialogue_ui: DialogueUI = $DialogueUI
+@onready var hint_button: TextureButton = $HintButton
 
 var zones: Array[ClickZone] = []
 var _phase: int = 1
@@ -16,6 +17,9 @@ var _attempt_count: Dictionary = {}
 var _monologue_data: Dictionary = {}
 var _intro_shown: bool = false
 var _pending_option_id: String = ""
+var _confirm_attempts: int = 0
+var _hint_shown: bool = false
+
 
 func _ready() -> void:
 	_monologue_data = _load_monologue_data()
@@ -27,6 +31,15 @@ func _ready() -> void:
 	
 	confirm_button.mouse_entered.connect(func(): hover_rect.visible = true)
 	confirm_button.mouse_exited.connect(func(): hover_rect.visible = false)
+
+	var hint_hover_rect: ColorRect = hint_button.get_node("HoverRect")
+	hint_hover_rect.color = Color(1, 1, 1, 0.3)
+	hint_hover_rect.visible = false
+	hint_button.mouse_entered.connect(func(): hint_hover_rect.visible = true)
+	hint_button.mouse_exited.connect(func(): hint_hover_rect.visible = false)
+
+	hint_button.visible = false
+	hint_button.pressed.connect(_on_hint_pressed)
 
 	for child in get_tree().get_nodes_in_group("click_zones"):
 		if child is ClickZone:
@@ -78,12 +91,39 @@ func _on_confirm_pressed() -> void:
 			selected_ids.append(zone.zone_id)
 
 	if _selection_matches_correct(selected_ids):
+		hint_button.visible = false
 		await _show_phase_transition()
 		_advance_to_phase_2(selected_ids)
-	elif _is_subset_of_correct(selected_ids):
-		_show_selection_feedback("incomplete")
 	else:
-		_show_selection_feedback("wrong")
+		_confirm_attempts += 1
+		if _confirm_attempts >= 3 and not _hint_shown:
+			_hint_shown = true
+			await _show_hint_dialogue()
+			hint_button.visible = true
+		elif _is_subset_of_correct(selected_ids):
+			_show_selection_feedback("incomplete")
+		else:
+			_show_selection_feedback("incomplete")
+
+ 	
+
+func _show_hint_dialogue() -> void:
+	DialogueManager.show_monologue(["Mhhh ..  ich könnte mir sagen lassen, was refactored werden muss."])
+	await DialogueManager.dialogue_finished
+func _on_hint_pressed() -> void:
+	for zone in zones:
+		GameState.set_flag(zone.zone_id + "_selected", false)
+	for id in correct_zone_ids:
+		GameState.set_flag(id + "_selected", true)
+	for zone in zones:
+		zone._refresh_flags() 	
+
+	hint_button.visible = false
+
+	await _show_phase_transition()
+	hint_button.visible = false
+	_advance_to_phase_2(correct_zone_ids)
+
 
 func _show_selection_feedback(feedback_type: String) -> void:
 	var lines: Array = _monologue_data.get("selection_feedback", {}).get(feedback_type, ["..."])
@@ -108,6 +148,7 @@ func _is_subset_of_correct(selected_ids: Array[String]) -> bool:
 func _advance_to_phase_2(selected_ids: Array[String]) -> void:
 	_phase = 2
 	confirm_button.visible = false
+	hint_button.visible = false
 
 	for zone in zones:
 		if zone.zone_id in selected_ids:
