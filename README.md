@@ -1,33 +1,33 @@
-Chaoffice Working Title
+# Chaoffice Working Title
 
+This is a prototype of our game "Chaoffice Working Title". It's a 2D puzzle game about exploring an office, solving puzzles and slowly rebuilding structure in a hasty work environment. It was was created in the module e-learning.
 
-How to semi sinnvoll Containern und Gitten Erklärung:
+## Features
 
-`git checkout -b BRANCH_NAME_KANN_SELBER_ERSTELLT_WERDEN`
+- Walkable office with collision, furniture, and interactive objects
+- Player character with walking and sitting animations
+- Dialogue and puzzle system (in development)
+- Web build, playable directly in the browser
 
-Alle neuen "Features" die man bastelt werden auf einem neuen Branch geschmissen, dieser cmd setzt einen quasi auf diesen Branch
-dann normal, ob man das macht nachdem man lokal neue Sachen erstellt hat und dann auf den neuen "Feature Branch" switched oder zuerst auf den Branch switched scheint keine Veränderung zu haben (korrigiert mich wenn ich falsch liege, aber ich hab immer zuerst geändert und dann geswitchted und es ging alles)
+## Tech Stack
 
-`git add .`
-`git commit -m "commit msg"`
-`git push`
+- Godot Engine (GDScript)
+- Web-Export via Docker + nginx
+- CI/CD: GitLab CI
 
-bei neuem Branch kommt dann die Fehlermeldung das Upstream nicht gesetzt ist, an der Stelle einfach 
+## Setup
 
- `git push --set-upstream origin BRANCH_NAME_KANN_SELBER_ERSTELLT_WERDEN`
+### Prerequisites
+- [Godot Engine](https://godotengine.org/) (version 4.6)
+- Optional: Docker for the web build
 
-Macht das es auf den Feature Branch im Git geschrieben wird (und falls dieser nicht existiert wird einer erstellt)
+### Run locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/xMenetekel/Chaoffice.git
+   cd Chaoffice
 
-Dann ist alles im Terminal erledigt und es geht im actual Git weiter - da einfach eine Merge Request erstellen und sie auf Auto-Merge setzen und warten bis alles durchgelaufen ist. Das sollte alles selbstständig laufen. 
-Der Branchname kann reused werden, kann aber auch gelöscht werden, ist voll egal methinks, einfach das Mergeding durchlaufen lassen und das passt. 
+2. Open the project in Godot: import project.godot and press F5 to run
 
-Wann mergen?
-Wenn wir neues Feature (s. Godot) auf https://chaoffice-working-title.fsr.imn.htwk-leipzig.de/ sehen wollen. Ansonsten bei GDD oä einfach mitteilen auf welchem Branch das ist dann müssen wir da nicht immer die Pipeline anschmeißen.
+Alternatively: Check out [the website](https://chaoffice-working-title.fsr.imn.htwk-leipzig.de/)
 
-
-ZEITPLAN:
-- erstes MVP erstellen
-	- rumlaufbares Office mit Collision, paar Tische, Stühle, Rechner, Fenster. MC mit Animation.
-- zweites MVP erstellen
-	- erste Rätsel einbauen, kleine Kohäsion in Story bringen
-- usw. 
